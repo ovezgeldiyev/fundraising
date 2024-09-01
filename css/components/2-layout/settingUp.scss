@@ -1,0 +1,303 @@
+.setting {
+  margin: auto;
+  box-shadow: 0px 10px 10px -5px rgba(0, 0, 0, 0.04),
+    0px 5px 64px 10px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 538px;
+  border-radius: 0 0 $corner-sm $corner-sm;
+  &__wrapper {
+    padding: $space-2xl;
+  }
+  &__body {
+    background-color: $white;
+    padding: $space-3xl;
+    display: none;
+    flex-direction: column;
+    &.active {
+      display: flex;
+    }
+    & > h4 {
+      margin-bottom: $space-md;
+    }
+    .button {
+      width: 100%;
+      margin-bottom: $space-3xl;
+      &:last-child {
+        margin: 0;
+      }
+      &:disabled {
+        opacity: 0.2;
+      }
+    }
+    .input {
+      margin: $space-md 0 0;
+      &__outer {
+        margin-bottom: $space-3xl;
+        p {
+          margin: $space-md 0 0;
+        }
+      }
+    }
+    .subtle {
+      color: $slate500;
+    }
+    .check {
+      &__outer {
+        margin-bottom: $space-3xl;
+        h4 {
+          margin-bottom: $space-md;
+        }
+      }
+    }
+  }
+  &__title {
+    background-color: $theme-primary-subtle;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: $space-lg;
+    margin-bottom: $space-3xl;
+    span {
+      width: 24px;
+      height: 24px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0 $space-xs;
+      img {
+        width: 100%;
+      }
+    }
+    .subtle {
+      font-weight: 600;
+      color: $theme-primary;
+    }
+    p {
+      color: $theme-primary;
+    }
+  }
+  &__tags {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -6px;
+    padding-top: $space-2xs;
+  }
+  &__tag {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    margin-right: $space-lg;
+    padding: $space-xs $space-md;
+    background-color: $theme-primary-subtle;
+    border-radius: $corner-sm;
+    opacity: 0.9;
+    margin: 6px;
+    svg {
+      width: 16px;
+      height: 16px;
+      color: $theme-primary;
+      transition: 0.3s ease;
+      margin-right: $space-xs;
+    }
+    b {
+      color: $theme-primary;
+      font-weight: 500;
+    }
+  }
+  &__radios {
+    padding: $space-md;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: -4px;
+    background-color: $slate50;
+    border-radius: $corner-lg;
+    margin-bottom: $space-3xl;
+  }
+  &__radio {
+    width: calc(33.3% - 8px);
+    margin: 4px;
+    position: relative;
+    display: flex;
+    box-sizing: border-box;
+    input {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+      z-index: 2;
+      cursor: pointer;
+      &:checked {
+        & ~ span {
+          background-color: $theme-button-color;
+          color: $white;
+        }
+      }
+    }
+    span {
+      white-space: nowrap;
+      box-sizing: border-box;
+      width: 100%;
+      height: 100%;
+      padding: $space-lg;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: $slate800;
+      background-color: $white;
+      font-family: $mainFont;
+      font-size: 16px;
+      line-height: 24px;
+      font-weight: 500;
+      border-radius: $corner-sm;
+      border: 1px solid $theme-border-color;
+      box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.06),
+        0px 4px 6px -1px rgba(0, 0, 0, 0.1);
+      transition: 0.3s ease;
+    }
+  }
+  &__date {
+    border-radius: $corner-lg;
+    background-color: $slate50;
+    padding: $space-lg;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: $space-3xl;
+    &-input {
+      max-height: 0;
+      overflow: hidden;
+      opacity: 0;
+      transition: 0.3s ease;
+      width: 100%;
+      max-width: 362px;
+      margin: 0 auto 0;
+      display: flex;
+      position: relative;
+      background-color: $white;
+      &.big {
+        max-height: unset;
+        margin: $space-md 0 0 0;
+        opacity: 1;
+        max-width: unset;
+      }
+      &.active {
+        max-height: 200px;
+        opacity: 1;
+        margin: $space-md auto 0;
+      }
+      input {
+        width: 100%;
+        height: 40px;
+        background-color: transparent;
+        border: 1px solid #cbd5e1;
+        font-family: $mainFont;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        color: $black;
+        border-radius: $corner-sm;
+        padding: $space-md $space-lg;
+        position: relative;
+        z-index: 2;
+        appearance: none;
+        -webkit-appearance: none;
+        box-sizing: border-box;
+        &::placeholder {
+          color: #94a3b8;
+        }
+      }
+      input[type="date"]::-webkit-inner-spin-button,
+      input[type="date"]::-webkit-calendar-picker-indicator {
+        opacity: 0;
+      }
+      span {
+        position: absolute;
+        top: 50%;
+        right: $space-lg;
+        transform: translateY(-50%);
+        width: 24px;
+        height: 24px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+  .select {
+    border: 1px solid $theme-border-color;
+    border-radius: $corner-md;
+    box-sizing: border-box;
+    padding: 0;
+    &__outer {
+      margin-bottom: $space-3xl;
+    }
+    &__selected {
+      padding: $space-lg;
+    }
+    &__search {
+      display: flex;
+      position: relative;
+      input {
+        width: 100%;
+        height: 100%;
+        box-sizing: border-box;
+        padding: 12px 10px 12px 40px;
+        font-family: $mainFont;
+        &::placeholder {
+          color: $slate400;
+        }
+      }
+      svg {
+        position: absolute;
+        top: 50%;
+
+        width: 16px;
+        height: 16px;
+        left: $space-xl;
+        transform: translateY(-50%);
+      }
+    }
+    &__options {
+      border: 1px solid $slate200;
+      top: calc(100% + 6px);
+      border-radius: $corner-sm;
+      padding: 0;
+      &-body {
+        display: flex;
+        flex-direction: column;
+        padding: $space-sm $space-md;
+      }
+      li {
+        padding: $space-sm $space-md;
+        transition: 0.3s ease;
+        border-radius: $corner-sm;
+        margin: 0;
+        &:hover {
+          background-color: $slate100;
+        }
+      }
+    }
+    & > svg {
+      width: 20px;
+      height: 20px;
+      right: $space-xl;
+    }
+  }
+  .cta__input {
+    margin-bottom: $space-3xl;
+    display: none;
+    &.active {
+      display: flex;
+      animation: fadeIn .4s ease;
+    }
+  }
+}

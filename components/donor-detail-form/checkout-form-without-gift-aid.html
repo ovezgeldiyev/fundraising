@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en" class="">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700;800;900&family=Roboto&family=Signika:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/intl-tel-input@19.2.17/build/js/intlTelInput.js"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/intl-tel-input@19.2.17/build/css/intlTelInput.css"
+    />
+    <link rel="stylesheet" href="../../css/main.css" />
+    <title>Checkout Form - without gift aid</title>
+  </head>
+  <body>
+    <div class="checkout__wrapper">
+      <form action="" class="checkout" id="checkoutForm">
+        <h3>Your Detail</h3>
+        <div class="checkout__row">
+          <div class="input__outer w-20">
+            <p>Title</p>
+            <div class="input sel">
+              <select name="" id="">
+                <option value="">Mr</option>
+                <option value="">Miss</option>
+                <option value="">Mrs</option>
+              </select>
+              <svg>
+                <use xlink:href="#chevron-bottom"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="input__outer w-40">
+            <p>First Name</p>
+            <div class="input">
+              <input type="text" />
+            </div>
+          </div>
+          <div class="input__outer w-40">
+            <p>Last Name</p>
+            <div class="input">
+              <input type="text" />
+            </div>
+          </div>
+        </div>
+        <div class="input__outer big">
+          <p>Email</p>
+          <div class="input">
+            <input type="email" value="you@example.org" />
+          </div>
+        </div>
+        <div class="input__outer big">
+          <p>Phone</p>
+          <div class="input">
+            <input type="tel" id="phone" />
+          </div>
+        </div>
+        <div class="checkout__title">
+          <p>Address</p>
+        </div>
+        <div class="input__outer big">
+          <p>Country</p>
+          <div class="input sel">
+            <select name="" id="">
+              <option value="">United Kingdom</option>
+              <option value="">Germany</option>
+              <option value="">France</option>
+              <option value="">USA</option>
+            </select>
+            <svg>
+              <use xlink:href="#chevron-bottom"></use>
+            </svg>
+          </div>
+        </div>
+        <div class="input__outer big">
+          <p>Address Line</p>
+          <div class="input">
+            <input type="text" />
+          </div>
+        </div>
+        <div class="input__outer big">
+          <p>Postcode</p>
+          <div class="input">
+            <input type="text" />
+          </div>
+        </div>
+        <label class="check">
+          <div class="check__box">
+            <input type="checkbox" />
+            <span></span>
+          </div>
+          <p class="small">Send me updates on my email</p>
+        </label>
+        <label class="check">
+          <div class="check__box">
+            <input type="checkbox" />
+            <span></span>
+          </div>
+          <p class="small">Send me updates on my phone</p>
+        </label>
+        <div class="checkout__message" id="checkoutMessage">
+          <svg>
+            <use xlink:href="#alertIcon"></use>
+          </svg>
+          <p class="detail">
+            Please complete the form before proceed to payment.
+          </p>
+        </div>
+        <button type="button" class="button primary" id="checkoutSubmit">
+          Proceed to Payment
+        </button>
+      </form>
+    </div>
+
+    <svg style="display: none">
+      <symbol id="alertIcon" viewBox="0 0 20 20" fill="none">
+        <g clip-path="url(#clip0_1078_67061)">
+          <path
+            d="M10.0013 18.3337C14.6037 18.3337 18.3346 14.6027 18.3346 10.0003C18.3346 5.39795 14.6037 1.66699 10.0013 1.66699C5.39893 1.66699 1.66797 5.39795 1.66797 10.0003C1.66797 14.6027 5.39893 18.3337 10.0013 18.3337Z"
+            stroke="#EF4444"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M10 6.66699V10.0003"
+            stroke="#EF4444"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M10 13.333H10.0083"
+            stroke="#EF4444"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </g>
+        <defs>
+          <clipPath id="clip0_1078_67061">
+            <rect width="20" height="20" fill="white" />
+          </clipPath>
+        </defs>
+      </symbol>
+      <symbol id="chevron-bottom" viewBox="0 0 16 16" fill="none">
+        <g>
+          <path
+            d="M4 6L8 10L12 6"
+            stroke="currentColor"
+            stroke-width="1.33333"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </g>
+      </symbol>
+      <symbol id="crossIcon" viewBox="0 0 24 25" fill="none">
+        <g>
+          <path
+            d="M18 6.5L6 18.5"
+            stroke="white"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M6 6.5L18 18.5"
+            stroke="white"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </g>
+      </symbol>
+    </svg>
+
+    <script src="../../js/jquery.js"></script>
+    <script src="../../js/slick.min.js"></script>
+    <script src="../../js/main.js"></script>
+    <script>
+      const input = document.querySelector("#phone");
+      const iti = window.intlTelInput(input, {
+        utilsScript:
+          "https://cdn.jsdelivr.net/npm/intl-tel-input@19.2.17/build/js/utils.js",
+      });
+      window.iti = iti;
+    </script>
+  </body>
+</html>

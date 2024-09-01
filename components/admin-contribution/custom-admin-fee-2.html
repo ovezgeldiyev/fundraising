@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en" class="">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700;800;900&family=Roboto&family=Signika:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../../css/main.css" />
+    <title>Cutom Admin fee 2</title>
+  </head>
+
+  <body>
+    <div class="adminC__wrapper">
+      <div class="adminC"  id="adminC">
+        <div class="adminC__title">
+          <p>Contribute to Admin Fee</p>
+          <span> ? </span>
+        </div>
+        <div class="adminC__slider">
+          <div class="adminC__slider-top">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="range">
+            <input
+              type="range"
+              name="range"
+              id="range"
+              value="0"
+              min="0"
+              max="100"
+            />
+            <label for="range" class="range__tip">
+              <b> <span>0</span>% </b>
+              <strong> (£ <small id="rangePrice">0.00</small> ) </strong>
+            </label>
+          </div>
+        </div>
+        <div class="adminC__text">
+          <div class="detail">
+            Contributing towards our admin costs can help us to continue
+            providing a high level of service.
+          </div>
+          <button type="button" class="customBtn">
+            Enter custom admin fee
+          </button>
+        </div>
+        <div class="adminC__row">
+          <p>£ <span id="reflectPrice">1.87</span></p>
+          <button type="button" class="customBtn">Enter custom admin fee</button>
+        </div>
+        <div class="cta__input active">
+          <label class="large" for="openAmount"> £ </label>
+          <input
+            id="openAmount"
+            placeholder="5|"
+            type="text"
+            pattern="^\$\d{1,3}(,\d{3})*(\.\d+)?$"
+            value=""
+            data-type="currency"
+          />
+          <div class="cta__input-select">
+            <select name="currency" id="">
+              <option value="GBP">GBP</option>
+              <option value="USD">USD</option>
+            </select>
+          </div>
+        </div>
+        <div class="adminC__foot active">
+          <button type="button" class="customBack">back to percentage fee</button>
+        </div>
+      </div>
+    </div>
+ 
+    <svg style="display: none">
+      <symbol id="copyIcon" viewBox="0 0 24 24" fill="none">
+        <path
+          d="M20 9H11C9.89543 9 9 9.89543 9 11V20C9 21.1046 9.89543 22 11 22H20C21.1046 22 22 21.1046 22 20V11C22 9.89543 21.1046 9 20 9Z"
+          stroke="black"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+        <path
+          d="M5 15H4C3.46957 15 2.96086 14.7893 2.58579 14.4142C2.21071 14.0391 2 13.5304 2 13V4C2 3.46957 2.21071 2.96086 2.58579 2.58579C2.96086 2.21071 3.46957 2 4 2H13C13.5304 2 14.0391 2.21071 14.4142 2.58579C14.7893 2.96086 15 3.46957 15 4V5"
+          stroke="black"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </symbol>
+      <symbol id="linkedin" viewBox="0 0 24 23" fill="none">
+        <path
+          d="M0.945312 1.64748C0.945312 0.738125 1.70662 0 2.64508 0H22.2446C23.1834 0 23.9443 0.738125 23.9443 1.64748V21.3518C23.9443 22.2614 23.1834 22.999 22.2446 22.999H2.64508C1.70671 22.999 0.945312 22.2615 0.945312 21.3521V1.64722V1.64748Z"
+          fill="#0A66C2"
+        />
+        <path
+          d="M7.93351 19.2479V8.89367H4.49192V19.2479H7.93387H7.93351ZM6.21343 7.48022C7.41334 7.48022 8.16036 6.68514 8.16036 5.69151C8.1379 4.67524 7.41334 3.90234 6.23625 3.90234C5.05836 3.90234 4.28906 4.67524 4.28906 5.69142C4.28906 6.68505 5.03581 7.48013 6.19088 7.48013H6.21316L6.21343 7.48022ZM9.83848 19.2479H13.2798V13.4663C13.2798 13.1572 13.3023 12.8473 13.3932 12.6266C13.6418 12.0081 14.2081 11.3678 15.1591 11.3678C16.4041 11.3678 16.9024 12.3172 16.9024 13.7093V19.2479H20.3436V13.3111C20.3436 10.1309 18.646 8.65092 16.3818 8.65092C14.5254 8.65092 13.7101 9.68848 13.2572 10.3952H13.2801V8.89403H9.83865C9.88357 9.86538 9.83839 19.2483 9.83839 19.2483L9.83848 19.2479Z"
+          fill="white"
+        />
+      </symbol>
+      <symbol id="facebook" viewBox="0 0 25 23" fill="none">
+        <path
+          d="M24.0547 11.4991C24.0547 5.1478 18.906 -0.000921249 12.5547 -0.000921249C6.20341 -0.000921249 1.05469 5.1478 1.05469 11.4991C1.05469 17.2391 5.26007 21.9966 10.7578 22.8594V14.8233H7.83789V11.4991H10.7578V8.96549C10.7578 6.0833 12.4747 4.49127 15.1015 4.49127C16.3597 4.49127 17.6758 4.71588 17.6758 4.71588V7.54595H16.2257C14.7971 7.54595 14.3516 8.43242 14.3516 9.34186V11.4991H17.541L17.0312 14.8233H14.3516V22.8594C19.8493 21.9966 24.0547 17.2391 24.0547 11.4991Z"
+          fill="#1877F2"
+        />
+      </symbol>
+      <symbol id="twitter" viewBox="0 0 24 23" fill="none">
+        <path
+          d="M17.5008 2.15625H20.671L13.7451 10.0721L21.8929 20.8438H15.5123L10.5155 14.3108L4.79812 20.8438H1.62604L9.03396 12.3769L1.21875 2.15625H7.75938L12.276 8.12762L17.4989 2.15625H17.5008ZM16.3882 18.9463H18.1448L6.80583 3.95408H4.92079L16.3882 18.9463Z"
+          fill="black"
+        />
+      </symbol>
+      <symbol id="EmailIcon" viewBox="0 0 24 23" fill="none">
+        <g clip-path="url(#clip0_399_34605)">
+          <path
+            d="M19.2188 3.83398H3.88542C2.82687 3.83398 1.96875 4.69211 1.96875 5.75065V17.2507C1.96875 18.3092 2.82687 19.1673 3.88542 19.1673H19.2188C20.2773 19.1673 21.1354 18.3092 21.1354 17.2507V5.75065C21.1354 4.69211 20.2773 3.83398 19.2188 3.83398Z"
+            stroke="black"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M21.1354 6.70898L12.5392 12.1715C12.2433 12.3569 11.9012 12.4552 11.5521 12.4552C11.2029 12.4552 10.8609 12.3569 10.565 12.1715L1.96875 6.70898"
+            stroke="black"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </g>
+        <defs>
+          <clipPath id="clip0_399_34605">
+            <rect
+              width="23"
+              height="23"
+              fill="white"
+              transform="translate(0.0546875)"
+            />
+          </clipPath>
+        </defs>
+      </symbol>
+    </svg>
+    <script src="../../js/jquery.js"></script>
+    <script src="../../js/slick.min.js"></script>
+    <script src="../../js/main.js"></script>
+    <script src="../../js/numberVal.js"></script>
+    <script src="../../js/rangeSlider.js"></script>
+  </body>
+</html>

@@ -1,0 +1,208 @@
+.adminC {
+  margin: auto;
+  background: $slate50;
+  box-shadow: 0px 10px 10px -5px rgba(0, 0, 0, 0.04),
+    0px 5px 64px 10px rgba(0, 0, 0, 0.08);
+  border-radius: $corner-sm;
+  display: flex;
+  flex-direction: column;
+  padding: $space-lg;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 360px;
+  &__wrapper {
+    padding: $space-2xl;
+  }
+  &__title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: $space-md;
+    p {
+      font-weight: 500;
+      color: $slate900;
+    }
+    span {
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+      background-color: $slate200;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      font-weight: 500;
+      color: $slate900;
+      cursor: pointer;
+    }
+  }
+  &__slider {
+    padding: $space-2xl 0;
+    margin-bottom: $space-md;
+    display: none;
+    &.active {
+      display: block;
+      animation: fadeIn 0.4s ease;
+    }
+    &-top {
+      display: flex;
+      justify-content: space-between;
+      height: 12px;
+      margin-bottom: $space-md;
+      span {
+        pointer-events: none;
+        height: 100%;
+        width: 16.6%;
+        border-left: 1px solid $theme-border-color;
+        box-sizing: border-box;
+        display: flex;
+        &:last-child {
+          border-right: 1px solid $theme-border-color;
+        }
+      }
+    }
+    input[type="range"] {
+      -webkit-appearance: none;
+      display: block;
+      width: 100%;
+      height: 12px;
+      padding: 0;
+      border-radius: $corner-full;
+      background: #cbd5e1;
+      box-sizing: content-box;
+    }
+    input[type="range"]:focus {
+      outline: none;
+    }
+    input[type="range"]::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      width: 28px;
+      height: 28px;
+      border: 5px solid #ffffffe0 !important;
+      border-radius: 50%;
+      background: $theme-primary;
+      box-sizing: border-box;
+      cursor: pointer;
+    }
+
+    input[type="range"] + label {
+      position: absolute;
+      bottom: calc(100% + 10px);
+      left: -38px;
+      height: 34px;
+      text-align: center;
+      color: $black;
+      font-weight: bold;
+      white-space: nowrap;
+      padding: 7px 13px;
+      background-color: $white;
+      box-shadow: 0px 2px 4px rgba(30, 41, 59, 0.25);
+      border-radius: $corner-sm;
+      box-sizing: border-box;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .range {
+      position: relative;
+      width: 100%;
+      &__tip {
+        font-size: 12px;
+        line-height: 20px;
+        b {
+          font-weight: 700;
+        }
+        strong {
+          font-weight: 400;
+          margin-left: 3px;
+        }
+        small {
+          font-weight: 400;
+          font-size: 12px;
+          line-height: 20px;
+        }
+      }
+    }
+  }
+  &__text {
+    padding: $space-xl;
+    background-color: $theme-primary-subtle;
+    border-radius: $corner-xl;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: $space-md;
+    display: none;
+    &.active {
+      display: flex;
+      animation: fadeIn 0.4s ease;
+    }
+    &:last-child {
+      margin: 0;
+    }
+    .detail {
+      width: 100%;
+      color: $slate500;
+      margin-bottom: $space-xl;
+    }
+  }
+  &__row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: $space-xl;
+    background-color: $theme-primary-subtle;
+    border-radius: $corner-xl;
+    margin-bottom: $space-md;
+    color: $black;
+    display: none;
+    &.active {
+      display: flex;
+      animation: fadeIn 0.4s ease;
+    }
+    &:last-child {
+      margin: 0;
+    }
+    p {
+      font-weight: 500;
+    }
+  }
+  &__foot {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: $space-xl;
+    background-color: $theme-primary-subtle;
+    border-radius: $corner-xl;
+    margin-bottom: $space-md;
+    color: $black;
+    display: none;
+    &.active {
+      display: flex;
+      animation: fadeIn 0.4s ease;
+    }
+  }
+  button,
+  a {
+    background-color: transparent;
+    color: $black;
+    text-decoration: underline;
+    font-weight: 500;
+    font-family: $mainFont;
+    cursor: pointer;
+    transition: 0.3s ease;
+    &:hover {
+      opacity: 0.88;
+    }
+  }
+  .cta {
+    &__input {
+      margin-bottom: $space-md;
+      display: none;
+      &.active {
+        display: flex;
+        animation: fadeIn 0.4s ease;
+      }
+    }
+  }
+}

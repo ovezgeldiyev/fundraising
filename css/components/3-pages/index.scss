@@ -1,0 +1,163 @@
+.hero {
+  position: relative;
+  &.big {
+    padding: 48px 0;
+    .hero {
+      &__bg {
+        position: fixed;
+        height: 490px;
+      }
+      &__inner {
+        height: unset;
+      }
+    }
+  }
+  &__bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    pointer-events: none;
+    img {
+      @include fullImage;
+      object-position: 80%;
+    }
+  }
+  &__inner {
+    position: relative;
+    height: 416px;
+    .account {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      max-width: unset;
+      z-index: 3;
+      transform: translateY(50%);
+      box-sizing: border-box;
+    }
+  }
+}
+// // 1380px
+// @mixin hero-xxxlg-xxxxlg {
+//   .hero {
+//   }
+// }
+// // 1250px
+// @mixin hero-xlg-xxlg-extra {
+//   .hero {
+//   }
+// }
+// 1180px
+@mixin hero-xlg-xxlg {
+  .hero {
+    &__inner {
+      .account {
+        padding: $space-xl;
+      }
+    }
+  }
+}
+// // 1024px
+// @mixin hero-lg-xlg {
+//   .hero {
+//   }
+// }
+// // 930px
+// @mixin hero-md-lg {
+//   .hero {
+//   }
+// }
+// // 750px
+// @mixin hero-sm-md {
+//   .hero {
+//   }
+// }
+// // 650px
+// @mixin hero-sm-md-extra {
+//   .hero {
+//   }
+// }
+// // 540px
+// @mixin hero-xsm-sm {
+//   .hero {
+//   }
+// }
+// // 440px
+// @mixin hero-xxsm-xsm {
+//   .hero {
+//   }
+// }
+.info {
+  margin-top: -150px;
+  padding-bottom: 112px;
+  background-color: $theme-page-bg;
+  &__inner {
+    &-row {
+      display: flex;
+      justify-content: space-between;
+    }
+    &-col {
+      width: calc(50% - 8px);
+      max-width: 625px;
+      display: flex;
+      flex-direction: column;
+      &:last-child {
+        padding-top: 235px;
+      }
+    }
+    .campaign,
+    .cta,
+    .donation {
+      margin: 0 0 $space-3xl 0;
+      &:last-child {
+        margin: 0;
+      }
+    }
+  }
+}
+// 1180px
+@mixin info-xlg-xxlg {
+  .info {
+    &__inner {
+      &-col {
+        &:last-child {
+          padding-top: 220px;
+        }
+      }
+    }
+  }
+}
+// 1024px
+@mixin info-lg-xlg {
+  .info {
+    margin: 0;
+    padding-top: 80px;
+    padding: 80px 0 50px;
+    &__inner {
+      &-row {
+        flex-direction: column;
+      }
+      &-col {
+        width: 100%;
+        max-width: unset;
+        align-items: center;
+        margin-bottom: $space-3xl;
+        &:last-child {
+          padding: 0;
+          margin: 0;
+        }
+      }
+    }
+  }
+}
+// 650px
+@mixin info-sm-md-extra {
+  .info {
+    padding: 100px 0 50px;
+  }
+}

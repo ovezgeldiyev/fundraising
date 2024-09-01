@@ -1,0 +1,244 @@
+.footer {
+  padding: 57px 0 45px;
+  background-color: $slate800;
+  color: $white;
+  &__inner {
+    &-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      margin-bottom: 35px;
+    }
+    &-main {
+      display: flex;
+      align-items: center;
+    }
+    &-logo {
+      width: 188px;
+      border-radius: 25px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-right: 20px;
+      overflow: hidden;
+      img {
+        width: 100%;
+      }
+    }
+    &-title {
+      max-width: 407px;
+      h2 {
+        margin-bottom: 10px;
+      }
+      p {
+        opacity: 0.5;
+      }
+    }
+    &-address {
+      color: $white;
+      opacity: 0.5;
+      text-align: end;
+    }
+    &-copy {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-top: 24px;
+      border-top: 1px solid rgba($slate50, 0.1);
+    }
+    &-side {
+      width: calc(55% - 10px);
+      max-width: 480px;
+      display: flex;
+      align-items: center;
+      padding-left: $space-md;
+      box-sizing: border-box;
+      &:last-child {
+        justify-content: flex-end;
+        width: calc(45% - 10px);
+        max-width: 400px;
+        padding: 0;
+      }
+      .subtle {
+        margin-right: $space-5xl;
+        color: $slate400;
+        &:last-child {
+          margin: 0;
+        }
+      }
+    }
+    &-secure {
+      display: flex;
+      align-items: center;
+      margin-right: 20px;
+      span {
+        width: 20px;
+        height: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: $space-md;
+        img {
+          width: 100%;
+        }
+      }
+      p {
+        opacity: 0.5;
+      }
+    }
+
+    &-pay {
+      display: flex;
+      &-item {
+        width: 31px;
+        height: 20px;
+        box-shadow: 0px 7.69231px 15.3846px rgba(183, 183, 183, 0.08),
+          0px 0.769231px 7.69231px rgba(183, 183, 183, 0.08);
+        border-radius: 2px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: $space-md;
+        &:last-child {
+          margin: 0;
+        }
+        img {
+          width: 100%;
+        }
+      }
+    }
+    &-links {
+      display: flex;
+      align-items: center;
+    }
+  }
+}
+// 1024px
+@mixin footer-lg-xlg {
+  .footer {
+    padding: 40px 0;
+    &__inner {
+      &-row {
+        margin-bottom: 22px;
+      }
+      &-logo {
+        width: 130px;
+        margin-right: 20px;
+        border-radius: 18px;
+      }
+      &-side {
+        padding: 0;
+        .subtle {
+          margin-right: 18px;
+        }
+      }
+      &-title {
+        width: calc(100% - 150px);
+      }
+    }
+  }
+}
+// 930px
+@mixin footer-md-lg {
+  .footer {
+    padding: 30px 0;
+    &__inner {
+      &-row {
+        flex-direction: column;
+      }
+      &-main {
+        width: 100%;
+        margin-bottom: 30px;
+      }
+      &-address {
+        width: 100%;
+      }
+      &-copy {
+        flex-direction: column;
+      }
+      &-side {
+        width: 100%;
+        max-width: unset;
+        margin-bottom: 20px;
+        &:last-child {
+          width: 100%;
+          margin: 0;
+          max-width: unset;
+        }
+      }
+    }
+  }
+}
+// 750px
+@mixin footer-sm-md {
+  .footer {
+  }
+}
+// 650px
+@mixin footer-sm-md-extra {
+  .footer {
+    padding: 24px 0;
+    &__inner {
+      &-row {
+        margin-bottom: 35px;
+      }
+      &-main {
+        flex-direction: column;
+        margin-bottom: 35px;
+      }
+      &-logo {
+        border-radius: 12px;
+        width: 94px;
+        margin: 0 0 14px 0;
+      }
+      &-title {
+        text-align: center;
+        width: 100%;
+      }
+      &-address {
+        width: 100%;
+        justify-content: center;
+        text-align: center;
+      }
+      &-copy {
+        padding-top: 35px;
+      }
+      &-side {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        .subtle {
+          margin: 0;
+        }
+      }
+      &-links {
+        justify-content: center;
+        padding-top: 20px;
+        .subtle {
+          margin-right: 32px;
+          &:last-child {
+            margin: 0;
+          }
+        }
+      }
+      &-secure {
+        width: 100%;
+        justify-content: center;
+        margin: 0 0 24px 0;
+      }
+      &-pay {
+        justify-content: center;
+      }
+    }
+  }
+}
+// 540px
+@mixin footer-xsm-sm {
+  .footer {
+  }
+}
+// 390px
+@mixin footer-xxxsm-xxsm {
+  .footer {
+  }
+}

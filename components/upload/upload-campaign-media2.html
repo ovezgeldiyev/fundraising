@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en" class="">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700;800;900&family=Roboto&family=Signika:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      type="text/javascript"
+      src="https://unpkg.com/filepond-plugin-file-encode/dist/filepond-plugin-file-encode.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://unpkg.com/filepond-plugin-file-validate-size/dist/filepond-plugin-file-validate-size.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://unpkg.com/filepond-plugin-image-exif-orientation/dist/filepond-plugin-image-exif-orientation.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://unpkg.com/filepond-plugin-image-preview/dist/filepond-plugin-image-preview.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://unpkg.com/filepond/dist/filepond.min.js"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/filepond-plugin-image-preview/dist/filepond-plugin-image-preview.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/filepond/dist/filepond.min.css"
+    />
+    <link rel="stylesheet" href="../../css/main.css" />
+    <title>Upload Campaign Media2</title>
+  </head>
+  <body>
+    <div class="edit__wrapper">
+      <div class="edit">
+        <h3>Campaign Images</h3>
+        <div class="editDrags">
+          <input
+            type="file"
+            class="filepond"
+            name="filepond"
+            multiple
+            data-max-file-size="3MB"
+            data-max-files="3"
+          />
+        </div>
+        <div class="edit__content">
+          <h3>Video</h3>
+        </div>
+        <div class="editVideo">
+          <div class="input__outer">
+            <p>Youtube Video’s URL</p>
+            <form action="" class="input ex">
+              <input
+                type="text"
+                placeholder="example: https://youtu.be/tnGoQ5HcaoA"
+                value="https://youtu.be/tnGoQ5HcaoA"
+                id="url"
+              />
+              <button
+                type="button"
+                class="button primary ex"
+                id="sendUrl"
+                onclick="getId()"
+              >
+                Get it!
+              </button>
+            </form>
+          </div>
+          <div class="editImage" id="myVideo">
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/tnGoQ5HcaoA?si=w43osoYIy-1t95fm"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+        <div class="edit__foot">
+          <button type="button" class="button secondary">Cancel</button>
+          <button type="submit" class="button primary">Save</button>
+        </div>
+      </div>
+    </div>
+    <svg style="display: none">
+      <symbol id="loadingIcon" viewBox="0 0 24 24" fill="none">
+        <g>
+          <path
+            d="M21 12.0004C20.9999 13.901 20.3981 15.7528 19.2809 17.2904C18.1637 18.8279 16.5885 19.9723 14.7809 20.5596C12.9733 21.1469 11.0262 21.1468 9.21864 20.5594C7.41109 19.9721 5.83588 18.8276 4.71876 17.29C3.60165 15.7523 2.99999 13.9005 3 11.9999C3.00001 10.0993 3.60171 8.24755 4.71884 6.70994C5.83598 5.17233 7.4112 4.02785 9.21877 3.44052C11.0263 2.85319 12.9734 2.85316 14.781 3.44044"
+            stroke="white"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </g>
+      </symbol>
+      <symbol id="crossIcon" viewBox="0 0 24 25" fill="none">
+        <g>
+          <path
+            d="M18 6.5L6 18.5"
+            stroke="white"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M6 6.5L18 18.5"
+            stroke="white"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </g>
+      </symbol>
+    </svg>
+
+    <script src="../../js/jquery.js"></script>
+    <script src="../../js/slick.min.js"></script>
+    <script src="../../js/main.js"></script>
+    <script>
+      /*
+We want to preview images, so we need to register the Image Preview plugin
+*/
+      FilePond.registerPlugin(
+        // encodes the file as base64 data
+        FilePondPluginFileEncode,
+
+        // validates the size of the file
+        FilePondPluginFileValidateSize,
+
+        // corrects mobile image orientation
+        FilePondPluginImageExifOrientation,
+
+        // previews dropped images
+        FilePondPluginImagePreview
+      );
+
+      // Select the file input and use create() to turn it into a pond
+      FilePond.create(document.querySelector(".filepond"));
+      //  const inputElement = document.querySelector('input[type="file"]');
+
+      // // Create a FilePond instance
+      // const pond = FilePond.create(inputElement);
+    </script>
+  </body>
+</html>

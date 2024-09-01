@@ -1,0 +1,251 @@
+// 1450px
+@include xxxxlg-xxxxxlg {
+  // @include hero-xxxxlg-xxxxxlg;
+}
+// 1380px
+@include xxxlg-xxxxlg {
+  // @include hero-xxxlg-xxxxlg;
+}
+// 1250px
+@include xlg-xxlg-extra {
+  // @include hero-xlg-xxlg-extra;
+}
+// 1180px
+@include xlg-xxlg {
+  .auto__container {
+    padding: 0 22px;
+  }
+  .account {
+    &.sm {
+      padding: $space-xl;
+      .account {
+        &__buttons {
+          .button {
+            margin-right: $space-sm;
+            padding: $space-md $space-lg;
+          }
+        }
+      }
+    }
+  }
+  @include hero-xlg-xxlg;
+  @include info-xlg-xxlg;
+}
+// 1024px
+@include lg-xlg {
+  ::-webkit-scrollbar {
+    display: none;
+  }
+  .account {
+    &.sm {
+      padding: $space-3xl;
+      .account {
+        &__main {
+          width: 100%;
+          max-width: unset;
+        }
+        &__buttons {
+          .button {
+            margin-right: $space-xl;
+            padding: $space-lg $space-xl;
+          }
+        }
+      }
+    }
+  }
+  @include info-lg-xlg;
+  @include footer-lg-xlg;
+}
+// 930px
+@include md-lg {
+  @include footer-md-lg;
+}
+// 750px
+@include sm-md {
+  // @include hero-sm-md;
+  @include onboard-sm-md;
+}
+// 650px
+@include sm-md-extra {
+  .account {
+    &.sm {
+      padding: $space-2xl;
+      .account {
+        &__buttons {
+          .button {
+            padding: $space-lg $space-4xl;
+          }
+        }
+      }
+    }
+    &__main {
+      flex-direction: column;
+    }
+    &__info {
+      width: 100%;
+      margin-bottom: $space-xl;
+    }
+    &__buttons {
+      width: 100%;
+      justify-content: center;
+    }
+  }
+  @include header-sm-md-extra;
+  @include info-sm-md-extra;
+  @include footer-sm-md-extra;
+}
+// 540px
+@include xsm-sm {
+  h2 {
+    font-size: 24px;
+    line-height: 28px;
+  }
+  h3 {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  h4 {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .large {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  p {
+    font-size: 14px;
+    line-height: 20px;
+    &.sm {
+      font-size: 12px;
+      line-height: 18px;
+    }
+  }
+  .campaign {
+    &__title {
+      margin-bottom: $space-md;
+    }
+    &__content {
+      padding: $space-2xl;
+    }
+    &__edit {
+      top: $space-xl;
+    }
+    h2 {
+      font-size: 24px;
+      line-height: 32px;
+      margin-bottom: $space-md;
+    }
+    p {
+      font-size: 14px;
+      line-height: 20px;
+    }
+  }
+  .fprogress {
+    h4 {
+      font-size: 16px;
+      line-height: 24px;
+    }
+  }
+  .donation {
+    padding: $space-2xl;
+    &Item {
+      margin-bottom: $space-2xl;
+    }
+    &__head {
+      &-tab {
+        padding: 10px 8px;
+      }
+      h4 {
+        font-size: 14px;
+      }
+    }
+    &__list {
+      &.fund {
+        .donationItem {
+          margin-bottom: $space-2xl;
+        }
+      }
+    }
+  }
+  .cta {
+    padding: $space-2xl;
+    &__wrapper {
+      padding: 10px;
+    }
+    &__foot {
+      &::before {
+        height: 22px;
+      }
+      .button {
+        padding: 15px;
+      }
+    }
+    &Fund {
+      padding: $space-xl $space-xl $space-2xl;
+      margin-bottom: $space-xl;
+      &.big {
+        max-height: 315px;
+      }
+      &__item {
+        margin-bottom: $space-md;
+        &-inner {
+          padding: $space-md;
+        }
+        h3 {
+          width: 70px;
+        }
+        hr {
+          margin: 0 $space-md;
+        }
+        p {
+          font-size: 12px;
+          width: calc(100% - 120px);
+        }
+        svg {
+          width: 20px;
+          height: 20px;
+          right: $space-lg;
+        }
+      }
+      & > .large {
+        font-size: 16px;
+        line-height: 20px;
+        bottom: 8px;
+      }
+    }
+    &Amount {
+      &__inner {
+        padding: $space-md 24px $space-md $space-md;
+        .subtle {
+          display: none;
+        }
+      }
+      .cta__input {
+        width: 100%;
+        border: unset;
+        padding: 0;
+      }
+      svg {
+        width: 20px;
+        height: 20px;
+        right: $space-lg;
+      }
+    }
+    &__input {
+      padding: $space-md;
+      input {
+        font-size: 20px;
+        line-height: 24px;
+      }
+    }
+  }
+  @include sign-xsm-sm;
+}
+// 440px
+@include xxsm-xsm {
+  // @include hero-xxsm-xsm;
+}
+// 390px
+@include xxxsm-xxsm {
+  @include onboard-xxxsm-xxsm;
+}

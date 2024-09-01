@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en" class="">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700;800;900&family=Roboto&family=Signika:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      type="text/javascript"
+      src="https://unpkg.com/filepond-plugin-file-encode/dist/filepond-plugin-file-encode.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://unpkg.com/filepond-plugin-file-validate-size/dist/filepond-plugin-file-validate-size.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://unpkg.com/filepond-plugin-image-exif-orientation/dist/filepond-plugin-image-exif-orientation.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://unpkg.com/filepond-plugin-image-preview/dist/filepond-plugin-image-preview.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://unpkg.com/filepond/dist/filepond.min.js"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/filepond-plugin-image-preview/dist/filepond-plugin-image-preview.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/filepond/dist/filepond.min.css"
+    />
+    <link rel="stylesheet" href="../../css/main.css" />
+    <title>Edit Mode</title>
+  </head>
+
+  <body>
+    <div class="campaign__wrapper">
+      <div class="campaign">
+        <div class="campaign__top">
+          <div class="campaign__edit modallBtn" data-mod="#modal-5">
+            <svg>
+              <use xlink:href="#imagePlus"></use>
+            </svg>
+            <b> Edit Media </b>
+          </div>
+          <svg>
+            <use xlink:href="#imageIcon"></use>
+          </svg>
+          <div class="campaignSlider">
+            <div class="campaignSlider__item">
+              <div class="campaignSlider__item-inner">
+                <img src="../../images/campaign.jpg" alt="" />
+              </div>
+            </div>
+            <div class="campaignSlider__item">
+              <div class="campaignSlider__item-inner">
+                <img src="../../images/campaign2.jpg" alt="" />
+              </div>
+            </div>
+            <div class="campaignSlider__item">
+              <div class="campaignSlider__item-inner">
+                <img src="../../images/campaign.jpg" alt="" />
+              </div>
+            </div>
+            <div class="campaignSlider__item">
+              <div class="campaignSlider__item-inner">
+                <img src="../../images/campaign2.jpg" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="campaign__content">
+          <div class="campaign__edit modallBtn" data-mod="#modal-6">
+            <svg class="sm">
+              <use xlink:href="#editIcon"></use>
+            </svg>
+            <b> Edit </b>
+          </div>
+          <div class="campaign__title">
+            <h2>Lorem qui deserunt aute exercitation</h2>
+            <p>
+              Adipisicing consequat quis quis do cillum velit eiusmod
+              adipisicing sunt sit fugiat cupidatat aute nulla aute velit
+              officia
+            </p>
+          </div>
+          <div class="fprogress">
+            <div class="fprogress__row">
+              <h4>87 Supporters</h4>
+              <h4>£1,740 / £3.000</h4>
+            </div>
+            <div class="fprogress__row">
+              <div class="detail">58% Collected</div>
+              <div class="detail">48 Days left</div>
+            </div>
+            <div class="fprogress__bar">
+              <span style="max-width: 58%"></span>
+            </div>
+          </div>
+          <div class="campaign__footer">
+            <a href="#" class="campaign__footer-tag">
+              <svg>
+                <use xlink:href="#megaphone"></use>
+              </svg>
+              <b> Education Campaign </b>
+            </a>
+            <a href="#" class="campaign__footer-tag">
+              <svg>
+                <use xlink:href="#location"></use>
+              </svg>
+              <b> Zambia </b>
+            </a>
+            <a href="#" class="campaign__footer-tag">
+              <svg>
+                <use xlink:href="#coins"></use>
+              </svg>
+              <b> Zakat Eligible </b>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- modals -->
+    <div class="modalsItem modall" id="modal-5">
+      <div class="edit">
+        <h3>Upload Campaign Images</h3>
+        <div class="editDrags">
+          <input
+            type="file"
+            class="filepond"
+            name="filepond"
+            multiple
+            data-max-file-size="3MB"
+            data-max-files="3"
+          />
+        </div>
+        <div class="edit__content">
+          <h3>Campaign Video</h3>
+          <div class="input__outer">
+            <p>Youtube Video’s URL</p>
+            <div class="input">
+              <input
+                type="text"
+                placeholder="example: https://youtu.be/tnGoQ5HcaoA"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="edit__foot">
+          <button type="button" class="button secondary">Cancel</button>
+          <button type="submit" class="button primary">Save</button>
+        </div>
+      </div>
+    </div>
+    <div class="modalsItem modall" id="modal-6">
+      <div class="edit">
+        <h3>Campaign Name</h3>
+        <div class="input big">
+          <input type="text" placeholder="E.g. Building a school" />
+        </div>
+        <div class="edit__content">
+          <div class="input__outer dark">
+            <p>Short Description (Optional)</p>
+            <div class="input">
+              <textarea
+                name=""
+                id=""
+                rows="3"
+                placeholder="Type your message here"
+              ></textarea>
+            </div>
+          </div>
+          <p class="subtle">
+            Slightly longer text that will appear after the campaign name. You
+            can write up to 160 characters.
+          </p>
+        </div>
+        <div class="edit__foot">
+          <button type="button" class="button secondary">Cancel</button>
+          <button type="submit" class="button primary">Save</button>
+        </div>
+      </div>
+    </div>
+    <svg style="display: none">
+      <symbol id="editIcon" viewBox="0 0 16 16" fill="none">
+        <g>
+          <path
+            d="M8 13.334H14"
+            stroke="currentColor"
+            stroke-width="1.33333"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M11 2.33414C11.2652 2.06892 11.6249 1.91992 12 1.91992C12.1857 1.91992 12.3696 1.9565 12.5412 2.02757C12.7128 2.09864 12.8687 2.20281 13 2.33414C13.1313 2.46546 13.2355 2.62136 13.3066 2.79294C13.3776 2.96452 13.4142 3.14842 13.4142 3.33414C13.4142 3.51985 13.3776 3.70375 13.3066 3.87533C13.2355 4.04691 13.1313 4.20281 13 4.33414L4.66667 12.6675L2 13.3341L2.66667 10.6675L11 2.33414Z"
+            stroke="currentColor"
+            stroke-width="1.33333"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </g>
+      </symbol>
+      <symbol id="imageIcon" viewBox="0 0 40 40" fill="none">
+        <g>
+          <path
+            d="M31.6667 5H8.33333C6.49238 5 5 6.49238 5 8.33333V31.6667C5 33.5076 6.49238 35 8.33333 35H31.6667C33.5076 35 35 33.5076 35 31.6667V8.33333C35 6.49238 33.5076 5 31.6667 5Z"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M14.9974 18.3327C16.8383 18.3327 18.3307 16.8403 18.3307 14.9993C18.3307 13.1584 16.8383 11.666 14.9974 11.666C13.1564 11.666 11.6641 13.1584 11.6641 14.9993C11.6641 16.8403 13.1564 18.3327 14.9974 18.3327Z"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M35 25.0001L29.8567 19.8568C29.2316 19.2319 28.3839 18.8809 27.5 18.8809C26.6161 18.8809 25.7684 19.2319 25.1433 19.8568L10 35.0001"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </g>
+      </symbol>
+      <symbol id="imagePlus" viewBox="0 0 24 24" fill="none">
+        <g>
+          <path
+            d="M21 12V19C21 19.5304 20.7893 20.0391 20.4142 20.4142C20.0391 20.7893 19.5304 21 19 21H5C4.46957 21 3.96086 20.7893 3.58579 20.4142C3.21071 20.0391 3 19.5304 3 19V5C3 4.46957 3.21071 3.96086 3.58579 3.58579C3.96086 3.21071 4.46957 3 5 3H12"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M16 5H22"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M19 2V8"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M9 11C10.1046 11 11 10.1046 11 9C11 7.89543 10.1046 7 9 7C7.89543 7 7 7.89543 7 9C7 10.1046 7.89543 11 9 11Z"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M21 14.9997L17.914 11.9137C17.5389 11.5388 17.0303 11.3281 16.5 11.3281C15.9697 11.3281 15.4611 11.5388 15.086 11.9137L6 20.9997"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </g>
+      </symbol>
+      <symbol id="megaphone" viewBox="0 0 16 16" fill="none">
+        <g>
+          <path
+            d="M2 7.33333L14 4V12L2 9.33333V7.33333Z"
+            stroke="currentColor"
+            stroke-width="1.33333"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M7.73576 11.1995C7.66572 11.4534 7.54636 11.691 7.38449 11.8987C7.22263 12.1065 7.02142 12.2803 6.79237 12.4103C6.56332 12.5403 6.31091 12.624 6.04954 12.6564C5.78818 12.6889 5.52298 12.6695 5.26909 12.5995C5.0152 12.5294 4.77759 12.4101 4.56983 12.2482C4.36207 12.0863 4.18823 11.8851 4.05823 11.6561C3.92822 11.427 3.84461 11.1746 3.81216 10.9133C3.77971 10.6519 3.79905 10.3867 3.86909 10.1328"
+            stroke="currentColor"
+            stroke-width="1.33333"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </g>
+      </symbol>
+      <symbol id="location" viewBox="0 0 16 16" fill="none">
+        <g>
+          <path
+            d="M13.3307 6.66732C13.3307 10.6673 7.9974 14.6673 7.9974 14.6673C7.9974 14.6673 2.66406 10.6673 2.66406 6.66732C2.66406 5.25283 3.22597 3.89628 4.22616 2.89608C5.22635 1.89589 6.58291 1.33398 7.9974 1.33398C9.41188 1.33398 10.7684 1.89589 11.7686 2.89608C12.7688 3.89628 13.3307 5.25283 13.3307 6.66732Z"
+            stroke="currentColor"
+            stroke-width="1.33333"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M8 8.66602C9.10457 8.66602 10 7.77059 10 6.66602C10 5.56145 9.10457 4.66602 8 4.66602C6.89543 4.66602 6 5.56145 6 6.66602C6 7.77059 6.89543 8.66602 8 8.66602Z"
+            stroke="currentColor"
+            stroke-width="1.33333"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </g>
+      </symbol>
+      <symbol id="coins" viewBox="0 0 16 16" fill="none">
+        <g clip-path="url(#clip0_394_29255)">
+          <path
+            d="M5.33594 9.33398C7.54508 9.33398 9.33594 7.54312 9.33594 5.33398C9.33594 3.12485 7.54508 1.33398 5.33594 1.33398C3.1268 1.33398 1.33594 3.12485 1.33594 5.33398C1.33594 7.54312 3.1268 9.33398 5.33594 9.33398Z"
+            stroke="currentColor"
+            stroke-width="1.33333"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M12.0651 6.91211C12.6953 7.14706 13.2561 7.53713 13.6956 8.04624C14.1351 8.55535 14.4391 9.16707 14.5796 9.82482C14.72 10.4826 14.6924 11.1651 14.4991 11.8093C14.3059 12.4536 13.9533 13.0387 13.4741 13.5105C12.9948 13.9824 12.4043 14.3258 11.7571 14.5089C11.1099 14.6921 10.427 14.7091 9.77156 14.5584C9.11608 14.4077 8.50918 14.0942 8.00699 13.6468C7.5048 13.1994 7.12353 12.6326 6.89844 11.9988"
+            stroke="currentColor"
+            stroke-width="1.33333"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M4.66406 4H5.33073V6.66667"
+            stroke="currentColor"
+            stroke-width="1.33333"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M11.1399 9.25391L11.6066 9.72724L9.72656 11.6072"
+            stroke="currentColor"
+            stroke-width="1.33333"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </g>
+        <defs>
+          <clipPath id="clip0_394_29255">
+            <rect width="16" height="16" fill="white" />
+          </clipPath>
+        </defs>
+      </symbol>
+    </svg>
+    <script src="../../js/jquery.js"></script>
+    <script src="../../js/slick.min.js"></script>
+    <script src="../../js/main.js"></script>
+    <script src="../../js/tabs.js"></script>
+    <script src="../../js/modals.js"></script>
+    <script>
+      FilePond.registerPlugin(
+        FilePondPluginFileEncode,
+        FilePondPluginFileValidateSize,
+        FilePondPluginImageExifOrientation,
+        FilePondPluginImagePreview
+      );
+      FilePond.create(document.querySelector(".filepond"));
+    </script>
+  </body>
+</html>

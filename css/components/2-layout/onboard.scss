@@ -1,0 +1,123 @@
+.onboard {
+  margin: auto;
+  background: $white;
+  box-shadow: 0px 5px 64px 10px rgba(0, 0, 0, 0.08),
+    0px 10px 10px -5px rgba(0, 0, 0, 0.04);
+  border-radius: $corner-sm;
+  display: flex;
+  justify-content: space-between;
+  padding: $space-3xl;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 820px;
+  &__wrapper {
+    padding: $space-2xl;
+  }
+  &__content {
+    width: calc(55% - 12px);
+    padding: $space-xl;
+    border-radius: $corner-xs;
+    background-color: $theme-primary-subtle;
+    box-sizing: border-box;
+    h2 {
+      margin-bottom: $space-6xl;
+    }
+  }
+  &__side {
+    width: calc(45% - 12px);
+    padding-top: 64px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  &__foot {
+    text-align: center;
+    p {
+      margin-bottom: $space-lg;
+    }
+    .button {
+      width: 100%;
+    }
+  }
+  &__title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  &__logo {
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-bottom: $space-md;
+    img {
+      @include fullImage;
+    }
+  }
+  &Item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: $space-xl;
+    &:last-child {
+      margin: 0;
+    }
+    &__icon {
+      width: 40px;
+      height: 40px;
+      margin-right: 12px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      img {
+        width: 60%;
+      }
+    }
+    &__text {
+      width: calc(100% - 52px);
+      p {
+        line-height: 175%;
+        b {
+          font-weight: 700;
+        }
+      }
+    }
+  }
+}
+// 750px
+@mixin onboard-sm-md {
+  .onboard {
+    flex-direction: column;
+    &__content {
+      width: 100%;
+    }
+    &__side {
+      width: 100%;
+      padding-top: $space-3xl;
+    }
+    &__title {
+      flex-direction: row;
+      align-items: center;
+      margin-bottom: $space-3xl;
+    }
+    &__logo {
+      margin: 0 $space-md 0 0;
+    }
+    &__foot {
+      text-align: start;
+    }
+  }
+}
+// 390px
+@mixin onboard-xxxsm-xxsm {
+  .onboard {
+    box-shadow: unset;
+    border-radius: unset;
+    &__wrapper {
+      padding: 0;
+    }
+  }
+}

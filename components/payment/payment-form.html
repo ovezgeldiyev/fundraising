@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en" class="">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700;800;900&family=Roboto&family=Signika:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../../css/main.css" />
+
+    <title>Payment Form</title>
+  </head>
+  <body>
+    <div class="payment__wrapper">
+      <div class="payment">
+        <div class="paymentForm">
+          <h4>Choose your preferred payment method</h4>
+          <div class="paymentForm__inner" id="paymentItems">
+            <div class="paymentItem">
+              <div class="paymentItem__head">
+                <input type="radio" name="payment" data-value="#paymentBtn1" />
+                <div class="paymentItem__radio">
+                  <span></span>
+                </div>
+                <div class="paymentItem__head-icon">
+                  <img
+                    src="../../images/icons/payment-light/apple-pay.svg"
+                    alt=""
+                  />
+                </div>
+                <div class="small">Apple Pay</div>
+              </div>
+            </div>
+            <div class="paymentItem">
+              <div class="paymentItem__head">
+                <input type="radio" name="payment" data-value="#paymentBtn2" />
+                <div class="paymentItem__radio">
+                  <span></span>
+                </div>
+                <div class="paymentItem__head-icon">
+                  <img
+                    src="../../images/icons/payment-light/google-pay.svg"
+                    alt=""
+                  />
+                </div>
+                <div class="small">Google Pay</div>
+              </div>
+            </div>
+            <div class="paymentItem">
+              <div class="paymentItem__head">
+                <input type="radio" name="payment" data-value="#paymentBtn3" />
+                <div class="paymentItem__radio">
+                  <span></span>
+                </div>
+                <div class="paymentItem__head-icon">
+                  <img
+                    src="../../images/icons/payment-light/paypal.svg"
+                    alt=""
+                  />
+                </div>
+                <div class="small">PayPal</div>
+              </div>
+            </div>
+            <div class="paymentItem active">
+              <div class="paymentItem__head">
+                <input type="radio" name="payment" data-value="#paymentBtn4" checked/>
+                <div class="paymentItem__radio">
+                  <span></span>
+                </div>
+                <div class="paymentItem__head-icon">
+                  <img
+                    src="../../images/icons/payment-light/credit-card.svg"
+                    alt=""
+                  />
+                </div>
+                <div class="small">Credit or Debit Card</div>
+              </div>
+              <div class="paymentItem__body active" id="paymentInputs">
+                <div class="input__outer">
+                  <div class="subtle">Card Number</div>
+                  <div class="input ex">
+                    <input type="text" placeholder="1234 1234 1234 1234" />
+                    <div class="input__icons">
+                      <span
+                        ><img
+                          src="../../images/icons/payment-light/visa.svg"
+                          alt=""
+                        />
+                      </span>
+                      <span
+                        ><img
+                          src="../../images/icons/payment-light/master-card.svg"
+                          alt=""
+                        />
+                      </span>
+                      <span class="big"
+                        ><img
+                          src="../../images/icons/payment-light/amex.svg"
+                          alt=""
+                        />
+                      </span>
+                      <span
+                        ><img
+                          src="../../images/icons/payment-light/diners.svg"
+                          alt=""
+                        />
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <div class="input__outer sm">
+                  <div class="subtle">Expiration</div>
+                  <div class="input">
+                    <input type="text" placeholder="MM / YY" />
+                  </div>
+                </div>
+                <div class="input__outer sm">
+                  <div class="subtle">CVV</div>
+                  <div class="input">
+                    <input type="text" placeholder="" />
+                  </div>
+                </div>
+                <div class="input__outer">
+                  <div class="subtle">Cardholder Name</div>
+                  <div class="input">
+                    <input type="text" placeholder="Full Name on your card" />
+                  </div>
+                </div>
+                <div class="input__outer">
+                  <div class="subtle">Country</div>
+                  <div class="input sel">
+                    <select name="" id="">
+                      <option value="">United Kingdom</option>
+                      <option value="">USA</option>
+                      <option value="">France</option>
+                    </select>
+                    <svg>
+                      <use xlink:href="#chevron-bottom"></use>
+                    </svg>
+                  </div>
+                </div>
+                <div class="input__outer">
+                  <div class="subtle">Postcode</div>
+                  <div class="input">
+                    <input type="text" placeholder="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="checkout__message" id="paymentMessage">
+            <svg>
+              <use xlink:href="#alertIcon"></use>
+            </svg>
+            <p class="detail">
+              Please complete the form before proceed to payment.
+            </p>
+          </div>
+          <div class="paymentForm__total">
+            <h4>Your Donation</h4>
+            <div class="paymentForm__total-row">
+              <p>Donation</p>
+              <p>
+                <b> £75.00 </b>
+              </p>
+            </div>
+            <div class="paymentForm__total-row">
+              <p>Admin Fee</p>
+              <p>
+                <b> £7.50 </b>
+              </p>
+            </div>
+            <div class="paymentForm__total-last">
+              <p>Due Today</p>
+              <p>£82.50</p>
+            </div>
+          </div>
+          <div class="paymentForm__foot">
+            <button
+              type="button"
+              class="button apple paymentBtn"
+              data-tab="#step3"
+              id="paymentBtn1"
+            >
+              <img src="../../images/icons/payment/apple-pay.svg" alt="" />
+            </button>
+            <button
+              type="button"
+              class="button google paymentBtn"
+              data-tab="#step3"
+              id="paymentBtn2"
+            >
+              <img src="../../images/icons/payment/google-pay.svg" alt="" />
+            </button>
+            <button
+              type="button"
+              class="button paypal paymentBtn"
+              data-tab="#step3"
+              id="paymentBtn3"
+            >
+              <img src="../../images/icons/payment/paypal.svg" alt="" />
+            </button>
+            <button
+              type="button"
+              class="button primary paymentBtn active"
+              data-tab="#step3"
+              id="paymentBtn4"
+            >
+              <span>
+                <img src="../../images/icons/credit-card.svg" alt="" />
+              </span>
+              Make Payment
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <svg style="display: none">
+      <symbol id="alertIcon" viewBox="0 0 20 20" fill="none">
+        <g clip-path="url(#clip0_1078_67061)">
+          <path
+            d="M10.0013 18.3337C14.6037 18.3337 18.3346 14.6027 18.3346 10.0003C18.3346 5.39795 14.6037 1.66699 10.0013 1.66699C5.39893 1.66699 1.66797 5.39795 1.66797 10.0003C1.66797 14.6027 5.39893 18.3337 10.0013 18.3337Z"
+            stroke="#EF4444"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M10 6.66699V10.0003"
+            stroke="#EF4444"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M10 13.333H10.0083"
+            stroke="#EF4444"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </g>
+        <defs>
+          <clipPath id="clip0_1078_67061">
+            <rect width="20" height="20" fill="white" />
+          </clipPath>
+        </defs>
+      </symbol>
+      <symbol id="chevron-bottom" viewBox="0 0 16 16" fill="none">
+        <g>
+          <path
+            d="M4 6L8 10L12 6"
+            stroke="currentColor"
+            stroke-width="1.33333"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </g>
+      </symbol>
+      <symbol id="crossIcon" viewBox="0 0 24 25" fill="none">
+        <g>
+          <path
+            d="M18 6.5L6 18.5"
+            stroke="white"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M6 6.5L18 18.5"
+            stroke="white"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </g>
+      </symbol>
+    </svg>
+
+    <script src="../../js/jquery.js"></script>
+    <script src="../../js/slick.min.js"></script>
+    <script src="../../js/main.js"></script>
+    <script src="../../js/payment.js"></script>
+    <script src="../../js/tabs.js"></script>
+  </body>
+</html>

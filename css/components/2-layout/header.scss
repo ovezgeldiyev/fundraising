@@ -1,0 +1,137 @@
+.header {
+  background-color: rgba($white, 0.9);
+  border-top: 4px solid $theme-primary;
+  box-sizing: border-box;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 99;
+  &.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    animation-name: sticky;
+    animation-duration: 0.4s;
+    box-shadow: 0px 4px 4px 0px #00000021;
+    background-color: $white;
+    .header {
+      &__inner {
+        padding: 12px 0;
+        &-logo {
+          &::before {
+            opacity: .7;
+          }
+          b {
+            opacity: 1;
+          }
+        }
+      }
+    }
+  }
+  &__inner {
+    padding: 16px 0 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    &-logo {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 80px;
+      height: 48px;
+      border-radius: $corner-full;
+      overflow: hidden;
+      position: relative;
+      &:hover {
+        opacity: 1;
+        &::before {
+          opacity: 1;
+        }
+      }
+      &::before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: $theme-primary;
+        opacity: 0.3;
+        content: "";
+        pointer-events: none;
+        transition: 0.3s ease;
+      }
+      b {
+        font-size: 14px;
+        line-height: 20px;
+        font-weight: 500;
+        color: $white;
+        opacity: 0.8;
+        position: relative;
+        z-index: 1;
+      }
+      img {
+        width: 100%;
+      }
+    }
+    &-side {
+      display: flex;
+    }
+    &-buttons {
+      display: flex;
+    }
+    &-avatar {
+      width: 48px;
+      height: 48px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-left: 12px;
+      img {
+        @include fullImage;
+      }
+    }
+    .button {
+      margin-right: 12px;
+      &:last-child {
+        margin: 0;
+      }
+    }
+  }
+}
+// 650px
+@mixin header-sm-md-extra {
+  .header {
+    &__inner {
+      &-buttons {
+        &.mobRem {
+          display: none;
+        }
+      }
+      &-logo {
+        width: 48px;
+        height: 48px;
+        border-radius: 50%;
+        b {
+          font-size: 12px;
+          line-height: 24px;
+        }
+        img {
+          @include fullImage;
+        }
+      }
+    }
+  }
+}
+@keyframes sticky {
+  0% {
+    top: -60px;
+    opacity: 0;
+  }
+  100% {
+    top: 0;
+    opacity: 1;
+  }
+}

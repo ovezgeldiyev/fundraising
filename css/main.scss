@@ -1,0 +1,29 @@
+@import "./fonts/stylesheet.css";
+// 1-main components
+@import "./components/1-main/variables.scss";
+@import "./components/1-main/mixin.scss";
+@import "./components/1-main/nulifier.scss";
+// 2-layout components
+@import "./components/2-layout/components.scss";
+@import "./components/2-layout/header.scss";
+@import "./components/2-layout/nav.scss";
+@import "./components/2-layout/footer.scss";
+@import "./components/2-layout/campaign.scss";
+@import "./components/2-layout/auth.scss";
+@import "./components/2-layout/donation.scss";
+@import "./components/2-layout/edit.scss";
+@import "./components/2-layout/checkout.scss";
+@import "./components/2-layout/share.scss";
+@import "./components/2-layout/cta.scss";
+@import "./components/2-layout/settingUp.scss";
+@import "./components/2-layout/adminC.scss";
+@import "./components/2-layout/payment.scss";
+@import "./components/2-layout/onboard.scss";
+@import "./components/2-layout/sign.scss";
+// 3-pages components
+@import "./components/3-pages/index.scss";
+// responsive
+@import "./components/2-layout/responsive.scss";
+// slick
+@import "./components/2-layout/slick-theme.scss";
+@import "./components/2-layout/slick.scss";

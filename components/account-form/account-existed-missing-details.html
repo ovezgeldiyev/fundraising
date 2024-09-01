@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" class="">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700;800;900&family=Roboto&family=Signika:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../../css/main.css" />
+    <title>Account Existed - Missing Details</title>
+  </head>
+
+  <body>
+    <div class="newAccount__wrapper">
+      <div class="newAccount" id="newAccount">
+        <div class="newAccount__head">
+          <h4>Before you start</h4>
+          <div class="detail">
+            We need some information about your account before setting up a
+            fundraising page
+          </div>
+        </div>
+        <div class="newAccount__body">
+          <div class="input__outer">
+            <h4>Your Name</h4>
+            <div class="input">
+              <input type="text" />
+            </div>
+          </div>
+          <div class="input__outer">
+            <h4>Phone Number</h4>
+            <div class="input">
+              <input type="tel" />
+            </div>
+          </div>
+          <div class="newAccount__address">
+            <h4>Address</h4>
+            <div class="input">
+              <input type="text" placeholder="Address Line" />
+            </div>
+            <div class="input sel">
+              <select name="" id="">
+                <option value="" hidden>Country</option>
+                <option value="usa">USA</option>
+                <option value="uk">United Kingdom</option>
+                <option value="france">France</option>
+                <option value="italy">Italy</option>
+              </select>
+            </div>
+            <div class="input">
+              <input type="text" placeholder="Postcode" />
+            </div>
+          </div>
+          <button
+            type="button"
+            disabled
+            class="button primary"
+            id="newAccountBtn"
+          >
+            Continue
+          </button>
+        </div>
+      </div>
+    </div>
+    <script src="../../js/newAccount.js"></script>
+  </body>
+</html>

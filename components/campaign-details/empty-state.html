@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en" class="">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700;800;900&family=Roboto&family=Signika:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../../css/main.css" />
+    <title>Empty State</title>
+  </head>
+
+  <body>
+    <div class="campaign__wrapper">
+      <div class="campaign">
+        <div class="campaign__content">
+          <div class="campaign__edit modallBtn" data-mod="#modal-7">
+            <svg class="sm">
+              <use xlink:href="#editIcon"></use>
+            </svg>
+            <b> Edit </b>
+          </div>
+          <div class="campaign__title">
+            <h2>About This Campaign</h2>
+            <p class="em">
+              You can add more detail about this campaign up to 1600 characters.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- modals -->
+    <div class="modalsItem modall" id="modal-7">
+      <div class="edit">
+        <h3>About this campaign</h3>
+        <div class="edit__info">
+          <div class="detail">Write up to 1600 characters</div>
+        </div>
+        <div class="richText">
+          <div class="input">
+            <textarea
+              name=""
+              id=""
+              rows="5"
+              placeholder="Type your text here"
+            ></textarea>
+          </div>
+        </div>
+        <div class="edit__foot">
+          <button type="button" class="button secondary">Cancel</button>
+          <button type="submit" class="button primary">Save</button>
+        </div>
+      </div>
+    </div>
+    <svg style="display: none">
+      <symbol id="editIcon" viewBox="0 0 16 16" fill="none">
+        <g>
+          <path
+            d="M8 13.334H14"
+            stroke="currentColor"
+            stroke-width="1.33333"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M11 2.33414C11.2652 2.06892 11.6249 1.91992 12 1.91992C12.1857 1.91992 12.3696 1.9565 12.5412 2.02757C12.7128 2.09864 12.8687 2.20281 13 2.33414C13.1313 2.46546 13.2355 2.62136 13.3066 2.79294C13.3776 2.96452 13.4142 3.14842 13.4142 3.33414C13.4142 3.51985 13.3776 3.70375 13.3066 3.87533C13.2355 4.04691 13.1313 4.20281 13 4.33414L4.66667 12.6675L2 13.3341L2.66667 10.6675L11 2.33414Z"
+            stroke="currentColor"
+            stroke-width="1.33333"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </g>
+      </symbol>
+    </svg>
+    <script src="../../js/jquery.js"></script>
+    <script src="../../js/slick.min.js"></script>
+    <script src="../../js/main.js"></script>
+    <script src="../../js/modals.js"></script>
+  </body>
+</html>
