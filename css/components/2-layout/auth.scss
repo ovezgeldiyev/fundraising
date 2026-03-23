@@ -1,4 +1,43 @@
-.auth {
+.n3o-auth {
+  font-family: $mainFont;
+  color: $black;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+ 
+  a {
+    text-decoration: none;
+    opacity: 1;
+    color: $white;
+    transition: 0.3s ease;
+    cursor: pointer;
+    &:hover {
+      opacity: 0.88;
+    }
+  }
+  ul {
+    li {
+      list-style: none;
+    }
+  }
+  button {
+    outline: none;
+  }
+  button:focus {
+    outline: none;
+  }
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  input[type="search"]::-webkit-search-cancel-button,
+  input[type="search"]::-webkit-search-decoration,
+  input[type="search"]::-webkit-search-results-button,
+  input[type="search"]::-webkit-search-results-decoration {
+    display: none;
+  }
+
   margin: auto;
   background: $white;
   box-shadow: 0px 10px 10px -5px rgba(0, 0, 0, 0.04),
@@ -48,14 +87,14 @@
         }
       }
     }
-    p {
+    .n3o-p {
       margin-bottom: $space-lg;
     }
   }
-  h2 {
+  .n3o-h2 {
     margin-bottom: $space-3xl;
   }
-  .input {
+  .n3o-input {
     &__outer {
       width: 100%;
       margin-bottom: $space-xl;

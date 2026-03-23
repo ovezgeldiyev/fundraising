@@ -1,0 +1,1664 @@
+<!DOCTYPE html>
+<html lang="en" class="">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700;800;900&family=Roboto&family=Signika:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/mh-header-footer.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <title>Checkout</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  </head>
+
+  <body>
+    <!-- header start
+    =========================================== -->
+    <header class="_primary-header _header-fixed">
+      <div class="_ph-wrapper">
+        <!-- hamburger button menu trigger -->
+        <button
+          type="button"
+          class="navbar-toggle"
+          data-toggle="collapse"
+          data-target="#navbar"
+          aria-expanded="true"
+          aria-controls="navbar"
+        >
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <!--hamburger-button-->
+
+        <div class="_logo">
+          <a href="https://muslimhands.org.uk/">
+            <img
+              src="https://muslimhands.org.uk/_ui/media/logo.svg"
+              alt="Muslim Hands UK"
+              class="_logo-svg"
+            />
+            <img
+              src="https://muslimhands.org.uk/_ui/media/logo-lg.png"
+              alt="Muslim Hands UK"
+              class="_logo-lg"
+            />
+            <img
+              src="https://muslimhands.org.uk/_ui/media/logo-sm.png"
+              alt="Muslim Hands UK"
+              class="_logo-sm"
+            />
+            <img
+              src="https://muslimhands.org.uk/_ui/media/logo-print.png"
+              alt="Muslim Hands UK"
+              class="_logo-print"
+            />
+          </a>
+        </div>
+        <!--logo-->
+
+        <section class="_navigation collapse" id="navbar" aria-expanded="true">
+          <style>
+            nav .list-unstyled li {
+              opacity: 1;
+              transition: opacity 0.3s ease;
+            }
+
+            nav .list-unstyled li:hover {
+              opacity: 1;
+            }
+
+            nav .list-unstyled:hover li:not(:hover) {
+              opacity: 0.5;
+            }
+          </style>
+          <nav>
+            <ul class="list-unstyled text-center">
+              <li>
+                <a href="https://muslimhands.org.uk/appeals" title="Appeals"
+                  >Appeals</a
+                >
+              </li>
+              <li>
+                <a href="https://muslimhands.org.uk/our-work" title="Our Work"
+                  >Our Work</a
+                >
+              </li>
+              <li>
+                <a href="https://muslimhands.org.uk/zakat" title="Zakat"
+                  >Zakat</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://muslimhands.org.uk/appeals/sponsor-a-child"
+                  title="Sponsor a Child"
+                  >Sponsor a Child</a
+                >
+              </li>
+              <li>
+                <a href="https://muslimhands.org.uk/events" title="Events"
+                  >Events</a
+                >
+              </li>
+            </ul>
+          </nav>
+          <!--nav-->
+          <div class="--mhcartBtn__outer">
+            <div class="_cta-column">
+              <!-- <ul class="list-unstyled"> -->
+              <a
+                href="#"
+                class="btn btn-secondary btn-block _btn-gradient _btn-shadow mh-nav-btn-primary"
+                style="
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                "
+                >Fundraise</a
+              >
+
+              <a
+                class="btn btn-primary btn-block"
+                style="
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                "
+                href="/"
+                >Sign In</a
+              >
+            </div>
+            <div class="--mhcartBtn" id="cartBtn">
+              <svg>
+                <use xlink:href="#cartIcon"></use>
+              </svg>
+              <span>4</span>
+            </div>
+          </div>
+
+          <!--cta-column-->
+        </section>
+        <div class="--mhcartBtn mob" id="cartBtn">
+          <svg>
+            <use xlink:href="#cartIcon"></use>
+          </svg>
+          <span>4</span>
+        </div>
+        <!--navigation-->
+      </div>
+      <!--wrapper-->
+    </header>
+    <div class="--mhcart" id="cart">
+      <div class="--mhcart__wrapper">
+        <div class="--mhcart__inner">
+          <div class="--mhcart__inner-top">
+            <div class="--mhcart__inner-title">
+              <h5 class="n3o-h5">Your Donation Basket</h5>
+              <div class="--mhcart__inner-close" id="cartClose">
+                close
+                <span></span>
+              </div>
+            </div>
+            <div class="--mhcartMain">
+              <div class="--mhcartMain__list">
+                <div class="--mhcartMain__list-top">
+                  <div class="--mhcartMain__list-type">Regular Donation</div>
+                </div>
+                <div class="--mhcartItem">
+                  <div class="--mhcartItem__image">
+                    <img src="./images/checkoutm/cart-1.jpg" alt="" />
+                  </div>
+                  <div class="--mhcartItem__content">
+                    <a href="#"> Where Most Needed </a>
+                    <p class="n3o-p">
+                      Where Most Needed — <br />
+                      Sadaqa/Lillah
+                    </p>
+                  </div>
+                  <div class="--mhcartItem__price">
+                    <p class="n3o-p">$10</p>
+                    <button type="button" class="--mhcartItem__remove">
+                      Remove
+                    </button>
+                  </div>
+                </div>
+                <div class="--mhcartItem">
+                  <div class="--mhcartItem__image">
+                    <img src="./images/checkoutm/cart-1.jpg" alt="" />
+                  </div>
+                  <div class="--mhcartItem__content">
+                    <a href="#"> Where Most Needed </a>
+                    <p class="n3o-p">
+                      Where Most Needed — <br />
+                      General Charity
+                    </p>
+                  </div>
+                  <div class="--mhcartItem__price">
+                    <p class="n3o-p">$22</p>
+                    <button type="button" class="--mhcartItem__remove">
+                      Remove
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="--mhcartMain__list">
+                <div class="--mhcartMain__list-top">
+                  <div class="--mhcartMain__list-type">Single Donation</div>
+                </div>
+                <div class="--mhcartItem">
+                  <div class="--mhcartItem__image">
+                    <img src="./images/checkoutm/cart-1.jpg" alt="" />
+                  </div>
+                  <div class="--mhcartItem__content">
+                    <a href="#"> Where Most Needed </a>
+                    <p class="n3o-p">
+                      Where Most Needed — <br />
+                      Sadaqa/Lillah
+                    </p>
+                  </div>
+                  <div class="--mhcartItem__price">
+                    <p class="n3o-p">$10</p>
+                    <button type="button" class="--mhcartItem__remove">
+                      Remove
+                    </button>
+                  </div>
+                </div>
+                <div class="--mhcartItem">
+                  <div class="--mhcartItem__image">
+                    <img src="./images/checkoutm/cart-1.jpg" alt="" />
+                  </div>
+                  <div class="--mhcartItem__content">
+                    <a href="#"> Where Most Needed </a>
+                    <p class="n3o-p">
+                      Where Most Needed — <br />
+                      General Charity
+                    </p>
+                  </div>
+                  <div class="--mhcartItem__price">
+                    <p class="n3o-p">$22</p>
+                    <button type="button" class="--mhcartItem__remove">
+                      Remove
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <label class="--mhcheckC">
+                <div class="--mhcheckC__box">
+                  <input type="checkbox" />
+                  <span></span>
+                </div>
+                <p class="n3o-p">Contribute towards our admin costs <b> $2 </b></p>
+              </label>
+            </div>
+          </div>
+          <div class="--mhcart__inner-mid">
+            <div class="--mhcartTotal">
+              <h2 class="n3o-h2 big">Total</h2>
+              <h2 class="n3o-h2 big">$32 + $32 / month</h2>
+            </div>
+            <div class="--mhcart__inner-check active">
+              <a href="checkout.html" class="btn btn-secondary _btn-gradient"
+                >Checkout</a
+              >
+            </div>
+          </div>
+          <div class="--mhcartFoot">
+            <h6 class="n3o-h6">Donate Using</h6>
+            <div class="--mhcartFoot__image">
+              <img src="./images/checkoutm/payment-methods.png" alt="" />
+            </div>
+            <h6 class="n3o-h6">Payment Security</h6>
+            <p class="n3o-p">
+              Give with confidence. Our secure payment system ensures your
+              personal details are kept safe and secure.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- header end
+    =========================================== -->
+    <main class="main" id="main">
+      <!-- checkoutm start
+    =========================================== -->
+      <section class="--mhcheckoutm">
+        <div class="--mhcheckoutmTop">
+          <div class="--mhcheckoutmTop__bg">
+            <img src="./images/checkoutm/bg.jpg" alt="" />
+          </div>
+          <div class="auto__container">
+            <div class="--mhcheckoutmTop__inner">
+              <h1 class="n3o-h1 big">Checkout</h1>
+            </div>
+          </div>
+        </div>
+        <div class="auto__container">
+          <div class="--mhcheckoutm__inner">
+            <div class="--mhcheckoutm__breadcrumb">
+              <a href="#"> Home </a>
+              <span> </span>
+              <a href="#"> Donate </a>
+              <span> </span>
+              <a href="#" class="active"> Checkout </a>
+            </div>
+            <div class="--mhcheckoutm__total">
+              <h3 class="n3o-h3">Donation Total</h3>
+              <h4 class="n3o-h4">
+                $32
+                <span> + </span>
+                $32 / month
+              </h4>
+            </div>
+            <div class="--mhcheckoutm__content">
+              <h2 class="n3o-h2 big">Your Details</h2>
+              <form class="--mhcheckoutm__form">
+                <div class="--mhcheckoutmItem">
+                  <p class="n3o-p">Title<span>*</span></p>
+                  <div class="--mhinputm sel">
+                    <select name="" id="">
+                      <option value="" hidden>Select Title</option>
+                      <option value="">Mr</option>
+                      <option value="">Mrs</option>
+                      <option value="">Miss</option>
+                      <option value="">Ms</option>
+                      <option value="">Dr</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="--mhcheckoutmItem">
+                  <p class="n3o-p">First Name <span>*</span></p>
+                  <div class="--mhinputm">
+                    <input type="text" placeholder="First Name" />
+                  </div>
+                </div>
+                <div class="--mhcheckoutmItem">
+                  <p class="n3o-p">Last Name <span>*</span></p>
+                  <div class="--mhinputm">
+                    <input type="text" placeholder="Last Name" />
+                  </div>
+                </div>
+                <div class="--mhcheckoutmItem">
+                  <p class="n3o-p">Address Line 1 <span>*</span></p>
+                  <div class="--mhinputm">
+                    <input type="text" placeholder="Address Line 1" />
+                  </div>
+                </div>
+                <div class="--mhcheckoutmItem">
+                  <p class="n3o-p">Address Line 2 <span>*</span></p>
+                  <div class="--mhinputm">
+                    <input type="text" placeholder="Address Line 2" />
+                  </div>
+                </div>
+                <div class="--mhcheckoutmItem">
+                  <p class="n3o-p">Address Line 3 <span>*</span></p>
+                  <div class="--mhinputm">
+                    <input type="text" placeholder="Address Line 3" />
+                  </div>
+                </div>
+                <div class="--mhcheckoutmItem">
+                  <p class="n3o-p">Town/City <span>*</span></p>
+                  <div class="--mhinputm">
+                    <input type="text" placeholder="Town/City" />
+                  </div>
+                </div>
+                <div class="--mhcheckoutmItem">
+                  <p class="n3o-p">County/State <span>*</span></p>
+                  <div class="--mhinputm">
+                    <input type="text" placeholder="County/State" />
+                  </div>
+                </div>
+                <div class="--mhcheckoutmItem">
+                  <p class="n3o-p">Postcode <span>*</span></p>
+                  <div class="--mhinputm">
+                    <input type="text" placeholder="Postcode" />
+                  </div>
+                </div>
+                <div class="--mhcheckoutmItem big">
+                  <p class="n3o-p">Country <span>*</span></p>
+                  <div class="--mhinputm sel">
+                    <select name="SupporterDetails.Country">
+                      <option value="">Country</option>
+                      <option value="AFG">Afghanistan</option>
+                      <option value="ALB">Albania</option>
+                      <option value="DZA">Algeria</option>
+                      <option value="ASM">American Samoa</option>
+                      <option value="ARG">Argentina</option>
+                      <option value="ARM">Armenia</option>
+                      <option value="AUS">Australia</option>
+                      <option value="AUT">Austria</option>
+                      <option value="AZE">Azerbaijan</option>
+                      <option value="BHS">Bahamas</option>
+                      <option value="BHR">Bahrain</option>
+                      <option value="BGD">Bangladesh</option>
+                      <option value="BRB">Barbados</option>
+                      <option value="BLR">Belarus</option>
+                      <option value="BEL">Belgium</option>
+                      <option value="BLZ">Belize</option>
+                      <option value="BEN">Benin</option>
+                      <option value="BMU">Bermuda</option>
+                      <option value="BOL">Bolivia</option>
+                      <option value="BIH">Bosnia and Herzegovina</option>
+                      <option value="BWA">Botswana</option>
+                      <option value="BRA">Brazil</option>
+                      <option value="BRN">Brunei Darussalam</option>
+                      <option value="BGR">Bulgaria</option>
+                      <option value="BFA">Burkina Faso</option>
+                      <option value="BDI">Burundi</option>
+                      <option value="KHM">Cambodia</option>
+                      <option value="CM">Cameroon</option>
+                      <option value="CAN">Canada</option>
+                      <option value="CYM">Cayman Islands</option>
+                      <option value="CHL">Chile</option>
+                      <option value="CHN">China</option>
+                      <option value="COL">Colombia</option>
+                      <option value="CRI">Costa Rica</option>
+                      <option value="HRV">Croatia</option>
+                      <option value="CYP">Cyprus</option>
+                      <option value="CZE">Czech Republic</option>
+                      <option value="COD">
+                        Democratic Republic of the Congo
+                      </option>
+                      <option value="DNK">Denmark</option>
+                      <option value="DOM">Dominican Republic</option>
+                      <option value="ECU">Ecuador</option>
+                      <option value="EGY">Egypt</option>
+                      <option value="SLV">El Salvador</option>
+                      <option value="EST">Estonia</option>
+                      <option value="ETH">Ethiopia</option>
+                      <option value="FRO">Faroe Islands</option>
+                      <option value="FJI">Fiji</option>
+                      <option value="FIN">Finland</option>
+                      <option value="FRA">France</option>
+                      <option value="GUF">French Guiana</option>
+                      <option value="GMB">Gambia</option>
+                      <option value="GEO">Georgia</option>
+                      <option value="DEU">Germany</option>
+                      <option value="GHA">Ghana</option>
+                      <option value="GIB">Gibraltar</option>
+                      <option value="GRC">Greece</option>
+                      <option value="GRL">Greenland</option>
+                      <option value="GLP">Guadeloupe</option>
+                      <option value="GTM">Guatemala</option>
+                      <option value="HTI">Haiti</option>
+                      <option value="HND">Honduras</option>
+                      <option value="HKG">Hong Kong S.A.R.</option>
+                      <option value="HUN">Hungary</option>
+                      <option value="ISL">Iceland</option>
+                      <option value="IND">India</option>
+                      <option value="IDN">Indonesia</option>
+                      <option value="IRN">Iran</option>
+                      <option value="IRQ">Iraq</option>
+                      <option value="IRL">Ireland</option>
+                      <option value="ISR">Israel</option>
+                      <option value="ITA">Italy</option>
+                      <option value="JAM">Jamaica</option>
+                      <option value="JPN">Japan</option>
+                      <option value="JOR">Jordan</option>
+                      <option value="KAZ">Kazakhstan</option>
+                      <option value="KEN">Kenya</option>
+                      <option value="KOR">Korea</option>
+                      <option value="KWT">Kuwait</option>
+                      <option value="KGZ">Kyrgyzstan</option>
+                      <option value="LAO">Lao P.D.R.</option>
+                      <option value="LVA">Latvia</option>
+                      <option value="LBN">Lebanon</option>
+                      <option value="LBR">Liberia</option>
+                      <option value="LBY">Libya</option>
+                      <option value="LIE">Liechtenstein</option>
+                      <option value="LTU">Lithuania</option>
+                      <option value="LUX">Luxembourg</option>
+                      <option value="MAC">Macao S.A.R.</option>
+                      <option value="MKD">Macedonia</option>
+                      <option value="MWI">Malawi</option>
+                      <option value="MYS">Malaysia</option>
+                      <option value="MDV">Maldives</option>
+                      <option value="MLI">Mali</option>
+                      <option value="MLT">Malta</option>
+                      <option value="MHL">Marshall Islands</option>
+                      <option value="MRT">Mauritania</option>
+                      <option value="MUS">Mauritius</option>
+                      <option value="MYT">Mayotte</option>
+                      <option value="MEX">Mexico</option>
+                      <option value="MCO">Monaco</option>
+                      <option value="MNG">Mongolia</option>
+                      <option value="MNE">Montenegro</option>
+                      <option value="MAR">Morocco</option>
+                      <option value="MOZ">Mozambique</option>
+                      <option value="NAM">Namibia</option>
+                      <option value="NPL">Nepal</option>
+                      <option value="NLD">Netherlands</option>
+                      <option value="NZL">New Zealand</option>
+                      <option value="NIC">Nicaragua</option>
+                      <option value="NER">Niger</option>
+                      <option value="NGA">Nigeria</option>
+                      <option value="NOR">Norway</option>
+                      <option value="OMN">Oman</option>
+                      <option value="PAK">Pakistan</option>
+                      <option value="PAN">Panama</option>
+                      <option value="PRY">Paraguay</option>
+                      <option value="PER">Peru</option>
+                      <option value="PHL">Philippines</option>
+                      <option value="POL">Poland</option>
+                      <option value="PRT">Portugal</option>
+                      <option value="PRI">Puerto Rico</option>
+                      <option value="QAT">Qatar</option>
+                      <option value="REU">Réunion</option>
+                      <option value="ROU">Romania</option>
+                      <option value="RUS">Russia</option>
+                      <option value="RWA">Rwanda</option>
+                      <option value="SAU">Saudi Arabia</option>
+                      <option value="SEN">Senegal</option>
+                      <option value="SRB">Serbia</option>
+                      <option value="SYC">Seychelles</option>
+                      <option value="SGP">Singapore</option>
+                      <option value="SVK">Slovakia</option>
+                      <option value="SVN">Slovenia</option>
+                      <option value="ZAF">South Africa</option>
+                      <option value="ESP">Spain</option>
+                      <option value="LKA">Sri Lanka</option>
+                      <option value="SDN">Sudan</option>
+                      <option value="SWZ">Swaziland</option>
+                      <option value="SWE">Sweden</option>
+                      <option value="CHE">Switzerland</option>
+                      <option value="SYR">Syria</option>
+                      <option value="TWN">Taiwan</option>
+                      <option value="TAJ">Tajikistan</option>
+                      <option value="TZA">Tanzania</option>
+                      <option value="THA">Thailand</option>
+                      <option value="TTO">Trinidad and Tobago</option>
+                      <option value="TUN">Tunisia</option>
+                      <option value="TUR">Turkey</option>
+                      <option value="TKM">Turkmenistan</option>
+                      <option value="ARE">U.A.E.</option>
+                      <option value="UKR">Ukraine</option>
+                      <option value="GBR" selected="">United Kingdom</option>
+                      <option value="USA">United States</option>
+                      <option value="UMI">
+                        United States Minor Outlying Islands
+                      </option>
+                      <option value="URY">Uruguay</option>
+                      <option value="UZB">Uzbekistan</option>
+                      <option value="VEN">Venezuela</option>
+                      <option value="VNM">Vietnam</option>
+                      <option value="VIR">Virgin Islands, U.S.</option>
+                      <option value="YEM">Yemen</option>
+                      <option value="ZMB">Zambia</option>
+                      <option value="ZWE">Zimbabwe</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="--mhcheckoutmItem mid">
+                  <p class="n3o-p">Email <span>*</span></p>
+                  <div class="--mhcheckoutmItem__content">
+                    <div class="--mhinputm">
+                      <input type="email" placeholder="Email" />
+                    </div>
+                    <label class="--mhcheckm">
+                      <div class="--mhcheckm__box">
+                        <input type="checkbox" />
+                        <span></span>
+                      </div>
+                      <p class="n3o-p">
+                        Send me emails with feedback about my donations and news
+                        updates
+                      </p>
+                    </label>
+                  </div>
+                </div>
+                <div class="--mhcheckoutmItem">
+                  <p class="n3o-p">Phone Number <span>*</span></p>
+                  <div class="--mhcheckoutmItem__content">
+                    <div class="--mhinputm">
+                      <input type="tel" placeholder="Phone Number" />
+                    </div>
+                    <label class="--mhcheckm">
+                      <div class="--mhcheckm__box">
+                        <input type="checkbox" />
+                        <span></span>
+                      </div>
+                      <p class="n3o-p">Send me occasional SMS updates from Muslim Hands</p>
+                    </label>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <div class="--mhcheckoutm__content">
+              <h2 class="n3o-h2 big">Single Donation</h2>
+              <div class="--mhcheckoutm__form">
+                <div class="--mhcheckoutmItem">
+                  <p class="n3o-p">Name on Card <span>*</span></p>
+                  <div class="--mhinputm">
+                    <input type="text" placeholder="Name on Card" />
+                  </div>
+                </div>
+                <div class="--mhcheckoutmItem">
+                  <p class="n3o-p">Card Number <span>*</span></p>
+                  <div class="--mhinputm">
+                    <input type="text" placeholder="Card Number" />
+                  </div>
+                </div>
+                <div class="--mhcheckoutmItem">
+                  <p class="n3o-p">Expiry Date <span>*</span></p>
+                  <div class="--mhcheckoutmItem__row">
+                    <div class="--mhinputm sel sm">
+                      <select name="SingleDonationCardDetails.ExpiryMonth">
+                        <option value="">Expiry Month</option>
+                        <option value="1">01 - Jan</option>
+                        <option value="2">02 - Feb</option>
+                        <option value="3">03 - Mar</option>
+                        <option value="4">04 - Apr</option>
+                        <option value="5">05 - May</option>
+                        <option value="6">06 - Jun</option>
+                        <option value="7">07 - Jul</option>
+                        <option value="8">08 - Aug</option>
+                        <option value="9">09 - Sep</option>
+                        <option value="10">10 - Oct</option>
+                        <option value="11">11 - Nov</option>
+                        <option value="12">12 - Dec</option>
+                      </select>
+                    </div>
+                    <div class="--mhinputm sel sm">
+                      <select name="SingleDonationCardDetails.ExpiryYear">
+                        <option value="">Expiry Year</option>
+                        <option value="2024">2024</option>
+                        <option value="2025">2025</option>
+                        <option value="2026">2026</option>
+                        <option value="2027">2027</option>
+                        <option value="2028">2028</option>
+                        <option value="2029">2029</option>
+                        <option value="2030">2030</option>
+                        <option value="2031">2031</option>
+                        <option value="2032">2032</option>
+                        <option value="2033">2033</option>
+                        <option value="2034">2034</option>
+                        <option value="2035">2035</option>
+                        <option value="2036">2036</option>
+                        <option value="2037">2037</option>
+                        <option value="2038">2038</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <div class="--mhcheckoutmItem">
+                  <p class="n3o-p">Security Code <span>*</span></p>
+                  <div class="--mhcheckoutmItem__row">
+                    <div class="--mhinputm">
+                      <input type="text" placeholder="Security Code" />
+                    </div>
+                    <div class="--mhcheckoutmItem__image">
+                      <img src="./images/checkoutm/cc-cvv.jpg" alt="" />
+                    </div>
+                  </div>
+                </div>
+                <div class="--mhcheckoutmPayment">
+                  <div class="--mhcheckoutmPayment__inner">
+                    <div class="--mhcheckoutmPayment__col">
+                      <h5 class="n3o-h5">Payment Security</h5>
+                      <p class="n3o-p">
+                        Give with confidence. Our secure payment system ensures
+                        your personal details are kept safe and secure.
+                      </p>
+                    </div>
+                    <div class="--mhcheckoutmPayment__col">
+                      <h5 class="n3o-h5">You Can Donate Using</h5>
+                      <div class="--mhcheckoutmPayment__image">
+                        <img
+                          src="./images/checkoutm/payment-methods.png"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="--mhcheckoutm__wrapper">
+              <div class="--mhcheckoutm__content">
+                <h2 class="n3o-h2 big">Regular Donation</h2>
+                <div class="--mhcheckoutm__form">
+                  <div class="--mhcheckoutm__form-text">
+                    Donating monthly by Direct Debit is only available for £
+                    (GBP) amounts. For other currencies monthly donations are by
+                    credit or debit card. You may cancel at any time.
+                  </div>
+                  <div class="--mhcheckoutm__form-date">
+                    <div class="--mhcheckoutmItem big">
+                      <p class="n3o-p">Choose a payment type <span>*</span></p>
+                      <div class="--mhcheckoutmItem__content">
+                        <label class="--mhradiom">
+                          <div class="--mhradiom__box">
+                            <input type="radio" name="paymentMethod" checked />
+                            <span> </span>
+                          </div>
+                          <p class="n3o-p">Card</p>
+                        </label>
+                      </div>
+                    </div>
+                    <div class="--mhcheckoutmItem">
+                      <p class="n3o-p">Preferred Payment Date <span>*</span></p>
+                      <div class="--mhinputm sel">
+                        <select name="RegularDonationCardPaymentDay">
+                          <option value="1" selected="">1st</option>
+                          <option value="2">2nd</option>
+                          <option value="3">3rd</option>
+                          <option value="4">4th</option>
+                          <option value="5">5th</option>
+                          <option value="6">6th</option>
+                          <option value="7">7th</option>
+                          <option value="8">8th</option>
+                          <option value="9">9th</option>
+                          <option value="10">10th</option>
+                          <option value="11">11th</option>
+                          <option value="12">12th</option>
+                          <option value="13">13th</option>
+                          <option value="14">14th</option>
+                          <option value="15">15th</option>
+                          <option value="16">16th</option>
+                          <option value="17">17th</option>
+                          <option value="18">18th</option>
+                          <option value="19">19th</option>
+                          <option value="20">20th</option>
+                          <option value="21">21st</option>
+                          <option value="22">22nd</option>
+                          <option value="23">23rd</option>
+                          <option value="24">24th</option>
+                          <option value="25">25th</option>
+                          <option value="26">26th</option>
+                          <option value="27">27th</option>
+                          <option value="28">28th</option>
+                          <option value="29">29th</option>
+                          <option value="30">30th</option>
+                          <option value="31">31st</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="--mhcheckoutm__form-text">
+                    Donating monthly by Direct Debit is only available for £
+                    (GBP) amounts. For other currencies monthly donations are by
+                    credit or debit card. You may cancel at any time.
+                  </div>
+                  <div class="--mhcheckoutmItem">
+                    <p class="n3o-p">Name on Card <span>*</span></p>
+                    <div class="--mhinputm">
+                      <input type="text" placeholder="Name on Card" />
+                    </div>
+                  </div>
+                  <div class="--mhcheckoutmItem">
+                    <p class="n3o-p">Card Number <span>*</span></p>
+                    <div class="--mhinputm">
+                      <input type="text" placeholder="Card Number" />
+                    </div>
+                  </div>
+                  <div class="--mhcheckoutmItem">
+                    <p class="n3o-p">Expiry Date <span>*</span></p>
+                    <div class="--mhcheckoutmItem__row">
+                      <div class="--mhinputm sel sm">
+                        <select name="SingleDonationCardDetails.ExpiryMonth">
+                          <option value="">Expiry Month</option>
+                          <option value="1">01 - Jan</option>
+                          <option value="2">02 - Feb</option>
+                          <option value="3">03 - Mar</option>
+                          <option value="4">04 - Apr</option>
+                          <option value="5">05 - May</option>
+                          <option value="6">06 - Jun</option>
+                          <option value="7">07 - Jul</option>
+                          <option value="8">08 - Aug</option>
+                          <option value="9">09 - Sep</option>
+                          <option value="10">10 - Oct</option>
+                          <option value="11">11 - Nov</option>
+                          <option value="12">12 - Dec</option>
+                        </select>
+                      </div>
+                      <div class="--mhinputm sel sm">
+                        <select name="SingleDonationCardDetails.ExpiryYear">
+                          <option value="">Expiry Year</option>
+                          <option value="2024">2024</option>
+                          <option value="2025">2025</option>
+                          <option value="2026">2026</option>
+                          <option value="2027">2027</option>
+                          <option value="2028">2028</option>
+                          <option value="2029">2029</option>
+                          <option value="2030">2030</option>
+                          <option value="2031">2031</option>
+                          <option value="2032">2032</option>
+                          <option value="2033">2033</option>
+                          <option value="2034">2034</option>
+                          <option value="2035">2035</option>
+                          <option value="2036">2036</option>
+                          <option value="2037">2037</option>
+                          <option value="2038">2038</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="--mhcheckoutmItem">
+                    <p class="n3o-p">Security Code <span>*</span></p>
+                    <div class="--mhcheckoutmItem__row">
+                      <div class="--mhinputm">
+                        <input type="text" placeholder="Security Code" />
+                      </div>
+                      <div class="--mhcheckoutmItem__image">
+                        <img src="./images/checkoutm/cc-cvv.jpg" alt="" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="--mhcheckoutm__wrapper">
+              <div class="--mhcheckoutm__content">
+                <h2 class="n3o-h2 big">Final Bit</h2>
+                <div class="--mhcheckoutm__form">
+                  <div class="--mhcheckoutm__form-text">
+                    <p class="n3o-p">
+                      By proceeding I confirm I accept the Muslim Hands
+                      <a
+                        target="_blank"
+                        href="https://muslimhands.org.uk/terms-and-conditions"
+                        >terms and conditions</a
+                      >
+                      and
+                      <a
+                        target="_blank"
+                        href="https://muslimhands.org.uk/privacy-and-security"
+                        >privacy policy</a
+                      >
+                    </p>
+                  </div>
+                </div>
+                <div class="--mhcheckoutm__content-captcha">
+                  <iframe
+                    title="reCAPTCHA"
+                    width="304"
+                    height="78"
+                    role="presentation"
+                    name="a-1duajupl0jb7"
+                    frameborder="0"
+                    scrolling="no"
+                    sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox allow-storage-access-by-user-activation"
+                    src="https://www.google.com/recaptcha/api2/anchor?ar=2&amp;k=6Lf5IKkdAAAAAEw-K7l10gugSFwLl_cAfYhSMPiC&amp;co=aHR0cHM6Ly9tdXNsaW1oYW5kcy5vcmcudWs6NDQz&amp;hl=ru&amp;v=WV-mUKO4xoWKy9M4ZzRyNrP_&amp;size=normal&amp;cb=pcp5euyxf61i"
+                  ></iframe>
+                </div>
+                <div class="--mhcheckoutm__content-foot">
+                  <button
+                    id="siteCheckout_btn"
+                    type="button"
+                    class="btn btn-secondary _btn-gradient __submit"
+                  >
+                    Process Payment
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- checkoutm end
+    =========================================== -->
+      <!-- footer start
+    =========================================== -->
+      <section class="_company-info _theme-blue _ci-ramadan">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-lg-14 col-lg-offset-1">
+              <div
+                class="col-sm-6 col-sm-offset-1 col-md-offset-0 col-lg-5 text-center _ci-left-col"
+              >
+                <img
+                  alt=""
+                  class="img-responsive hidden-sm hidden-md hidden-lg __lazyloaded"
+                  data-src="https://muslimhands.org.uk/_ui/media/logo-white.png"
+                  src="https://muslimhands.org.uk/_ui/media/logo-white.png"
+                />
+
+                <img
+                  alt=""
+                  class="img-responsive hidden-sm hidden-md hidden-lg _r2021-ftr__img __lazyloaded"
+                  data-src="https://muslimhands.org.uk/_ui/media/ramadan-2021/r2021-hoth-mono-footer-optimised.png"
+                  src="https://muslimhands.org.uk/_ui/media/ramadan-2021/r2021-hoth-mono-footer-optimised.png"
+                />
+
+                <img
+                  alt=""
+                  class="img-responsive hidden-xs __lazyloaded"
+                  data-src="https://muslimhands.org.uk/_ui/media/logo-mhl-gm.png"
+                  src="https://muslimhands.org.uk/_ui/media/logo-mhl-gm.png"
+                />
+              </div>
+              <!--col-->
+
+              <div
+                class="col-sm-6 col-sm-offset-1 col-md-10 col-md-offset-0 col-lg-11 _ci-right-col"
+              >
+                <ul class="_social-links list-inline list-unstyled">
+                  <li>
+                    <a
+                      href="https://www.facebook.com/MuslimHands"
+                      target="_blank"
+                      title="Muslim Hands UK"
+                    >
+                      <svg
+                        width="41"
+                        height="40"
+                        viewBox="0 0 41 40"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M20.5 0.800003C9.89599 0.800003 1.29999 9.396 1.29999 20C1.29999 30.604 9.89599 39.2 20.5 39.2C31.104 39.2 39.7 30.604 39.7 20C39.7 9.396 31.104 0.800003 20.5 0.800003ZM25.048 14.068H22.162C21.82 14.068 21.44 14.518 21.44 15.116V17.2H25.05L24.504 20.172H21.44V29.094H18.034V20.172H14.944V17.2H18.034V15.452C18.034 12.944 19.774 10.906 22.162 10.906H25.048V14.068Z"
+                          fill="white"
+                        />
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://twitter.com/muslimhandsuk"
+                      target="_blank"
+                      title="Muslim Hands UK"
+                    >
+                      <svg
+                        width="41"
+                        height="40"
+                        viewBox="0 0 41 40"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M20.5 0.800003C9.89599 0.800003 1.29999 9.396 1.29999 20C1.29999 30.604 9.89599 39.2 20.5 39.2C31.104 39.2 39.7 30.604 39.7 20C39.7 9.396 31.104 0.800003 20.5 0.800003ZM28.31 16.528C28.318 16.692 28.32 16.856 28.32 17.016C28.32 22.016 24.518 27.778 17.562 27.778C15.5066 27.7814 13.4939 27.1911 11.766 26.078C12.06 26.114 12.362 26.128 12.668 26.128C14.44 26.128 16.07 25.526 17.364 24.51C16.5754 24.4945 15.8113 24.2334 15.1782 23.763C14.5451 23.2927 14.0745 22.6365 13.832 21.886C14.3983 21.9937 14.9817 21.9711 15.538 21.82C14.6821 21.6469 13.9124 21.1832 13.3594 20.5073C12.8064 19.8315 12.5042 18.9852 12.504 18.112V18.066C13.014 18.348 13.598 18.52 14.218 18.54C13.4156 18.0059 12.8476 17.1853 12.6301 16.2463C12.4126 15.3072 12.5621 14.3205 13.048 13.488C13.9979 14.656 15.1825 15.6115 16.5251 16.2926C17.8677 16.9738 19.3384 17.3653 20.842 17.442C20.6508 16.6306 20.7331 15.7788 21.076 15.019C21.4189 14.2592 22.0032 13.634 22.7381 13.2405C23.473 12.8471 24.3173 12.7074 25.1398 12.8433C25.9622 12.9792 26.7167 13.3831 27.286 13.992C28.1323 13.8246 28.9439 13.5141 29.686 13.074C29.4039 13.9503 28.8133 14.6944 28.024 15.168C28.7737 15.0777 29.5057 14.8762 30.196 14.57C29.689 15.3298 29.0503 15.9929 28.31 16.528Z"
+                          fill="white"
+                        />
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://instagram.com/muslimhandsuk/"
+                      target="_blank"
+                      title="Muslim Hands UK"
+                    >
+                      <svg
+                        width="41"
+                        height="40"
+                        viewBox="0 0 41 40"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M26.5 20C26.5 21.5913 25.8678 23.1174 24.7426 24.2426C23.6174 25.3679 22.0913 26 20.5 26C18.9087 26 17.3826 25.3679 16.2573 24.2426C15.1321 23.1174 14.5 21.5913 14.5 20C14.5 19.658 14.536 19.324 14.598 19H12.5V26.994C12.5 27.55 12.95 28 13.506 28H27.496C27.7624 27.9995 28.0178 27.8933 28.206 27.7046C28.3943 27.516 28.5 27.2605 28.5 26.994V19H26.402C26.464 19.324 26.5 19.658 26.5 20ZM20.5 24C21.0254 23.9999 21.5457 23.8963 22.031 23.6951C22.5164 23.4939 22.9574 23.1991 23.3288 22.8274C23.7003 22.4558 23.9949 22.0147 24.1958 21.5292C24.3968 21.0437 24.5001 20.5234 24.5 19.998C24.4999 19.4726 24.3962 18.9523 24.195 18.467C23.9939 17.9816 23.699 17.5406 23.3274 17.1692C22.9558 16.7977 22.5147 16.5031 22.0292 16.3022C21.5437 16.1012 21.0234 15.9979 20.498 15.998C19.4369 15.9983 18.4193 16.4201 17.6691 17.1706C16.919 17.9211 16.4977 18.9389 16.498 20C16.4983 21.0611 16.92 22.0787 17.6706 22.8288C18.4211 23.579 19.4389 24.0003 20.5 24ZM25.3 15.8H27.698C27.8573 15.8 28.0101 15.7369 28.123 15.6244C28.2358 15.5119 28.2995 15.3593 28.3 15.2V12.802C28.3 12.6423 28.2366 12.4892 28.1237 12.3763C28.0108 12.2634 27.8576 12.2 27.698 12.2H25.3C25.1403 12.2 24.9872 12.2634 24.8743 12.3763C24.7614 12.4892 24.698 12.6423 24.698 12.802V15.2C24.7 15.53 24.97 15.8 25.3 15.8ZM20.5 0.800003C15.4078 0.800003 10.5242 2.82285 6.92354 6.42355C3.32284 10.0243 1.29999 14.9078 1.29999 20C1.29999 25.0922 3.32284 29.9758 6.92354 33.5765C10.5242 37.1772 15.4078 39.2 20.5 39.2C23.0214 39.2 25.5181 38.7034 27.8475 37.7385C30.177 36.7736 32.2936 35.3593 34.0764 33.5765C35.8593 31.7936 37.2736 29.677 38.2385 27.3475C39.2034 25.0181 39.7 22.5214 39.7 20C39.7 17.4786 39.2034 14.9819 38.2385 12.6525C37.2736 10.323 35.8593 8.20644 34.0764 6.42355C32.2936 4.64067 30.177 3.22641 27.8475 2.26152C25.5181 1.29663 23.0214 0.800003 20.5 0.800003ZM30.5 27.778C30.5 29 29.5 30 28.278 30H12.722C11.5 30 10.5 29 10.5 27.778V12.222C10.5 11 11.5 10 12.722 10H28.278C29.5 10 30.5 11 30.5 12.222V27.778Z"
+                          fill="white"
+                        />
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.youtube.com/user/muslimhandsuk"
+                      target="_blank"
+                      title="Muslim Hands UK"
+                    >
+                      <svg
+                        width="41"
+                        height="40"
+                        viewBox="0 0 41 40"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M11.46 22.28H12.92V29.5H14.32V22.28H15.78V21.06H11.46V22.28ZM18.84 28C18.6 28.28 17.78 28.84 17.78 28.04V23.26H16.54V28.48C16.54 30.06 18.12 29.64 18.86 28.82V29.5H20.1V23.26H18.86V28H18.84ZM23.46 23.22C22.74 23.22 22.28 23.76 22.28 23.76V21.04H21.02V29.5H22.28V29.02C22.28 29.02 22.7 29.58 23.46 29.58C24.12 29.58 24.62 29 24.62 28.2V24.74C24.62 23.8 24.18 23.22 23.46 23.22ZM23.32 28.04C23.32 28.5 23 28.72 22.58 28.54C22.4665 28.487 22.3646 28.4122 22.28 28.32V24.44C22.36 24.36 22.46 24.3 22.54 24.24C22.98 24.02 23.32 24.36 23.32 24.82V28.04ZM27.94 27.72C27.94 28.2 27.68 28.52 27.38 28.54C27.06 28.56 26.74 28.3 26.74 27.72V26.54H29.12V24.94C29.1261 24.6964 29.0832 24.454 28.9939 24.2273C28.9046 24.0005 28.7706 23.794 28.6 23.62C28.2559 23.3062 27.8056 23.1346 27.34 23.14C26.9 23.14 26.44 23.28 26.08 23.56C25.7 23.86 25.46 24.32 25.46 24.94V27.74C25.46 28.3 25.64 28.74 25.92 29.06C26.26 29.42 26.72 29.62 27.2 29.64C27.78 29.66 28.4 29.42 28.76 28.92C28.98 28.62 29.12 28.22 29.12 27.74V27.42H27.94V27.72ZM26.74 24.94C26.74 24.6 26.94 24.2 27.32 24.2C27.7 24.2 27.94 24.56 27.94 24.94V25.58H26.74V24.94Z"
+                          fill="white"
+                        />
+                        <path
+                          d="M20.4399 2C18.076 2.00013 15.7353 2.46587 13.5513 3.37063C11.3674 4.27538 9.38306 5.60144 7.71161 7.27308C6.04015 8.94472 4.71432 10.9292 3.8098 13.1132C2.90529 15.2973 2.43981 17.6381 2.43994 20.002C2.44007 22.3659 2.90581 24.7067 3.81057 26.8906C4.71533 29.0745 6.04138 31.0589 7.71302 32.7303C9.38466 34.4018 11.3691 35.7276 13.5532 36.6321C15.7372 37.5367 18.078 38.0021 20.4419 38.002C25.2161 38.0017 29.7946 36.105 33.1703 32.7289C36.5459 29.3529 38.4422 24.7742 38.4419 20C38.4417 15.2258 36.5449 10.6473 33.1689 7.27166C29.7928 3.89601 25.2141 1.99973 20.4399 2ZM23.5999 8.74H25.1999V14.1C25.1999 14.44 25.3599 14.44 25.4199 14.44C25.6599 14.44 26.0199 14.18 26.1999 14V8.72H27.7999V15.8H26.1999V15.18C25.9799 15.38 25.7599 15.54 25.5399 15.66C25.2399 15.82 24.9599 15.88 24.6799 15.88C24.5266 15.8873 24.3736 15.8607 24.2318 15.8019C24.0901 15.7431 23.9631 15.6537 23.8599 15.54C23.6799 15.32 23.5999 14.98 23.5999 14.56V8.74ZM18.4999 10.6C18.4999 9.5 19.3999 8.6 20.4999 8.6C21.5999 8.6 22.4999 9.5 22.4999 10.6V14C22.4999 15.1 21.5999 16 20.4999 16C19.3999 16 18.4999 15.1 18.4999 14V10.6ZM14.3399 6.3L15.2999 9.82L16.2799 6.3H18.0999L16.2199 11.86V15.8H14.4399V11.86L12.5199 6.3H14.3399ZM30.1399 31.38C29.1199 32.38 20.4799 32.4 20.4799 32.4C20.4799 32.4 11.8599 32.38 10.8199 31.38C9.79994 30.38 9.79994 25.4 9.79994 25.36C9.79994 25.34 9.79994 20.36 10.8199 19.34C11.8399 18.34 20.4799 18.32 20.4799 18.32C20.4799 18.32 29.0999 18.34 30.1399 19.34C31.1599 20.34 31.1799 25.32 31.1799 25.36C31.1799 25.36 31.1799 30.36 30.1399 31.38Z"
+                          fill="white"
+                        />
+                        <path
+                          d="M20.46 14.7C20.8 14.7 20.96 14.5 20.98 14.18V10.38C20.98 10.12 20.72 9.89999 20.48 9.89999C20.24 9.89999 19.98 10.1 19.98 10.38V14.18C19.98 14.48 20.12 14.68 20.46 14.7Z"
+                          fill="white"
+                        />
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+
+                <div class="_ci-content-right">
+                  <p>
+                    Established in 1993, Muslim Hands is an aid agency and NGO
+                    helping those affected by poverty, conflict and natural
+                    disaster in over 20 countries worldwide.
+                  </p>
+                </div>
+              </div>
+              <!--col-->
+            </div>
+          </div>
+        </div>
+        <!--container-fluid-->
+      </section>
+      <footer class="_primary-footer _theme-blue _pf-ramadan">
+        <div class="container-fluid">
+          <hr class="_divider-ramadan" />
+          <div class="col-lg-14 col-lg-offset-1">
+            <div class="row hidden-xs">
+              <nav class="col-sm-3 col-md-3">
+                <h3 class="_nav-title">Appeals</h3>
+                <ul class="list-unstyled">
+                  <li>
+                    <a href="https://muslimhands.org.uk/zakat" title="Zakat"
+                      >Zakat</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://muslimhands.org.uk/appeals/syria-crisis"
+                      title="Syria Crisis"
+                      >Syria Crisis</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://muslimhands.org.uk/appeals/yemen-emergency-appeal"
+                      title="Yemen Emergency"
+                      >Yemen Emergency</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://muslimhands.org.uk/appeals/the-blessed-lands"
+                      title="Blessed Lands"
+                      >Blessed Lands</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://muslimhands.org.uk/appeals/masjid-al-aqsa"
+                      title="Dome of the Rock"
+                      >Dome of the Rock</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://muslimhands.org.uk/appeals"
+                      title="All Appeals"
+                      >All Appeals</a
+                    >
+                  </li>
+                </ul>
+              </nav>
+              <!--nav-->
+              <nav class="col-sm-3 col-md-3">
+                <h3 class="_nav-title">Our Work</h3>
+                <ul class="list-unstyled">
+                  <li>
+                    <a
+                      href="https://muslimhands.org.uk/our-work/orphans"
+                      title="Orphans"
+                      >Orphans</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://muslimhands.org.uk/our-work/water"
+                      title="Water"
+                      >Water</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://muslimhands.org.uk/our-work/education"
+                      title="Education"
+                      >Education</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://muslimhands.org.uk/our-work/hunger"
+                      title="Hunger"
+                      >Hunger</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://muslimhands.org.uk/our-work/health"
+                      title="Health"
+                      >Health</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://muslimhands.org.uk/our-work/major-giving"
+                      title="Major Giving"
+                      >Major Giving</a
+                    >
+                  </li>
+                </ul>
+              </nav>
+              <!--nav-->
+              <nav class="col-sm-3 col-md-3">
+                <h3 class="_nav-title">Get Involved</h3>
+                <ul class="list-unstyled">
+                  <li>
+                    <a href="https://muslimhands.org.uk/events" title="Events"
+                      >Events</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://muslimhands.org.uk/get-involved"
+                      title="Volunteer"
+                      >Volunteer</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.facebook.com/MuslimHands"
+                      target="_blank"
+                      title="Facebook"
+                      >Facebook</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://twitter.com/muslimhandsuk"
+                      target="_blank"
+                      title="Twitter"
+                      >Twitter</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://instagram.com/muslimhandsuk"
+                      title="Instagram"
+                      >Instagram</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.youtube.com/user/muslimhandsuk"
+                      target="_blank"
+                      title="YouTube"
+                      >YouTube</a
+                    >
+                  </li>
+                </ul>
+              </nav>
+              <!--nav-->
+              <nav class="col-sm-3 col-md-3">
+                <h3 class="_nav-title">Latest</h3>
+                <ul class="list-unstyled">
+                  <li>
+                    <a
+                      href="https://muslimhands.org.uk/latest"
+                      title="News and Updates"
+                      >News and Updates</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://muslimhands.org.uk/latest/galleries"
+                      title="Galleries"
+                      >Galleries</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://muslimhands.org.uk/latest/videos"
+                      title="Videos"
+                      >Videos</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://muslimhands.org.uk/latest/articles"
+                      title="All Articles"
+                      >All Articles</a
+                    >
+                  </li>
+                </ul>
+              </nav>
+              <!--nav-->
+              <nav class="col-sm-3 col-md-3">
+                <h3 class="_nav-title">About Us</h3>
+                <ul class="list-unstyled">
+                  <li>
+                    <a
+                      href="https://muslimhands.org.uk/about-us"
+                      title="About Us"
+                      >About Us</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://muslimhands.org.uk/contact-us"
+                      title="Contact Us"
+                      >Contact Us</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://muslimhands.org.uk/where-we-work"
+                      title="Where We Work"
+                      >Where We Work</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://muslimhands.org.uk/ways-to-give"
+                      title="Ways to Give"
+                      >Ways to Give</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://muslimhands.org.uk/about-us/our-history"
+                      title="Our History"
+                      >Our History</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://muslimhands.org.uk/vacancies"
+                      title="Vacancies"
+                      >Vacancies</a
+                    >
+                  </li>
+                </ul>
+              </nav>
+              <!--nav-->
+            </div>
+            <!--row-->
+
+            <div class="_logos text-right">
+              <ul class="list-inline list-unstyled">
+                <li>
+                  <a
+                    href="https://www.fundraisingregulator.org.uk/"
+                    target="_blank"
+                    title="Fundraising Regulator"
+                  >
+                    <img
+                      src="https://muslimhands.org.uk/_ui/media/logo-fundraisingregulator.png"
+                      alt="Fundraising Regulator"
+                      class="__retina-img __lazyloaded"
+                    />
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <!--logos-->
+          </div>
+        </div>
+
+        <div class="container-fluid">
+          <div class="col-lg-14 col-lg-offset-1">
+            <div class="_copyrights-area">
+              <div class="row">
+                <div class="col-md-5 _copyright-msg">
+                  <p>Copyright © 2024 Muslim Hands. All rights reserved.</p>
+                </div>
+                <!--col-->
+                <div class="col-md-11 _copyright-links">
+                  <ul class="list-unstyled list-inline">
+                    <li>148 Gregory Boulevard, Nottingham, NG7 5JE.</li>
+                    <li>
+                      Registered Charity No. 1105056 / Registered Company No.
+                      05080486 in England.
+                    </li>
+                  </ul>
+                  <ul class="list-unstyled list-inline">
+                    <li>
+                      <a href="https://muslimhands.org.uk/privacy-and-security"
+                        >Privacy and Security</a
+                      >
+                    </li>
+                    <li>
+                      <a href="https://muslimhands.org.uk/terms-and-conditions"
+                        >Terms and Conditions</a
+                      >
+                    </li>
+
+                    <li>
+                      <a href="#" onclick="CookieControl.open(); return false;"
+                        >Update Cookie Preferences</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+                <!--col-->
+              </div>
+              <!--row-->
+            </div>
+            <!--copyrights-area-->
+          </div>
+        </div>
+        <!--container-fluid-->
+      </footer>
+      <!-- footer end
+    =========================================== -->
+    </main>
+
+    <svg style="display: none">
+      <symbol id="cartIcon" viewBox="0 0 576 512" fill="none">
+        <path
+          fill="currentColor"
+          d="M0 24C0 10.7 10.7 0 24 0L69.5 0c22 0 41.5 12.8 50.6 32l411 0c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3l-288.5 0 5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5L488 336c13.3 0 24 10.7 24 24s-10.7 24-24 24l-288.3 0c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5L24 48C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"
+        />
+      </symbol>
+      <symbol id="alertIcon" viewBox="0 0 20 20" fill="none">
+        <g clip-path="url(#clip0_1078_67061)">
+          <path
+            d="M10.0013 18.3337C14.6037 18.3337 18.3346 14.6027 18.3346 10.0003C18.3346 5.39795 14.6037 1.66699 10.0013 1.66699C5.39893 1.66699 1.66797 5.39795 1.66797 10.0003C1.66797 14.6027 5.39893 18.3337 10.0013 18.3337Z"
+            stroke="#EF4444"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M10 6.66699V10.0003"
+            stroke="#EF4444"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M10 13.333H10.0083"
+            stroke="#EF4444"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </g>
+        <defs>
+          <clipPath id="clip0_1078_67061">
+            <rect width="20" height="20" fill="white" />
+          </clipPath>
+        </defs>
+      </symbol>
+      <symbol id="chevron-bottom" viewBox="0 0 20 20" fill="none">
+        <path
+          d="M5 7.5L10 12.5L15 7.5"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </symbol>
+      <symbol id="checkIcon" viewBox="0 0 24 24" fill="none">
+        <path
+          d="M12 22C17.523 22 22 17.523 22 12C22 6.477 17.523 2 12 2C6.477 2 2 6.477 2 12C2 17.523 6.477 22 12 22Z"
+          stroke="black"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+        <path
+          d="M9 12L11 14L15 10"
+          stroke="black"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </symbol>
+      <symbol id="mailIcon" viewBox="0 0 17 16" fill="none">
+        <g>
+          <path
+            d="M13.8359 2.66602H3.16927C2.43289 2.66602 1.83594 3.26297 1.83594 3.99935V11.9993C1.83594 12.7357 2.43289 13.3327 3.16927 13.3327H13.8359C14.5723 13.3327 15.1693 12.7357 15.1693 11.9993V3.99935C15.1693 3.26297 14.5723 2.66602 13.8359 2.66602Z"
+            stroke="currentColor"
+            stroke-width="1.33333"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M15.1693 4.66602L9.18927 8.46602C8.98345 8.59497 8.74548 8.66336 8.5026 8.66336C8.25973 8.66336 8.02176 8.59497 7.81594 8.46602L1.83594 4.66602"
+            stroke="currentColor"
+            stroke-width="1.33333"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </g>
+      </symbol>
+      <symbol id="shareIcon" viewBox="0 0 17 16" fill="none">
+        <path
+          d="M12.625 5.33398C13.7296 5.33398 14.625 4.43855 14.625 3.33398C14.625 2.22941 13.7296 1.33398 12.625 1.33398C11.5204 1.33398 10.625 2.22941 10.625 3.33398C10.625 4.43855 11.5204 5.33398 12.625 5.33398Z"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+        <path
+          d="M4.625 10C5.72957 10 6.625 9.10457 6.625 8C6.625 6.89543 5.72957 6 4.625 6C3.52043 6 2.625 6.89543 2.625 8C2.625 9.10457 3.52043 10 4.625 10Z"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+        <path
+          d="M12.625 14.666C13.7296 14.666 14.625 13.7706 14.625 12.666C14.625 11.5614 13.7296 10.666 12.625 10.666C11.5204 10.666 10.625 11.5614 10.625 12.666C10.625 13.7706 11.5204 14.666 12.625 14.666Z"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+        <path
+          d="M6.35156 9.00586L10.9049 11.6592"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+        <path
+          d="M10.8982 4.33984L6.35156 6.99318"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </symbol>
+      <symbol id="gearIcon" viewBox="0 0 16 16" fill="none">
+        <path
+          d="M8.14667 1.33398H7.85333C7.49971 1.33398 7.16057 1.47446 6.91053 1.72451C6.66048 1.97456 6.52 2.3137 6.52 2.66732V2.78732C6.51976 3.02113 6.45804 3.25078 6.34103 3.45321C6.22401 3.65564 6.05583 3.82374 5.85333 3.94065L5.56667 4.10732C5.36398 4.22434 5.13405 4.28595 4.9 4.28595C4.66595 4.28595 4.43603 4.22434 4.23333 4.10732L4.13333 4.05398C3.82738 3.87749 3.46389 3.82961 3.12267 3.92086C2.78145 4.0121 2.49037 4.23501 2.31333 4.54065L2.16667 4.79398C1.99018 5.09994 1.9423 5.46343 2.03354 5.80465C2.12478 6.14587 2.34769 6.43695 2.65333 6.61398L2.75333 6.68065C2.95485 6.79699 3.12241 6.96404 3.23937 7.16521C3.35632 7.36637 3.4186 7.59463 3.42 7.82732V8.16732C3.42093 8.40226 3.35977 8.63329 3.2427 8.83699C3.12563 9.04069 2.95681 9.20985 2.75333 9.32732L2.65333 9.38732C2.34769 9.56435 2.12478 9.85543 2.03354 10.1967C1.9423 10.5379 1.99018 10.9014 2.16667 11.2073L2.31333 11.4607C2.49037 11.7663 2.78145 11.9892 3.12267 12.0804C3.46389 12.1717 3.82738 12.1238 4.13333 11.9473L4.23333 11.894C4.43603 11.777 4.66595 11.7154 4.9 11.7154C5.13405 11.7154 5.36398 11.777 5.56667 11.894L5.85333 12.0607C6.05583 12.1776 6.22401 12.3457 6.34103 12.5481C6.45804 12.7505 6.51976 12.9802 6.52 13.214V13.334C6.52 13.6876 6.66048 14.0267 6.91053 14.2768C7.16057 14.5268 7.49971 14.6673 7.85333 14.6673H8.14667C8.50029 14.6673 8.83943 14.5268 9.08948 14.2768C9.33952 14.0267 9.48 13.6876 9.48 13.334V13.214C9.48024 12.9802 9.54196 12.7505 9.65898 12.5481C9.77599 12.3457 9.94418 12.1776 10.1467 12.0607L10.4333 11.894C10.636 11.777 10.866 11.7154 11.1 11.7154C11.334 11.7154 11.564 11.777 11.7667 11.894L11.8667 11.9473C12.1726 12.1238 12.5361 12.1717 12.8773 12.0804C13.2186 11.9892 13.5096 11.7663 13.6867 11.4607L13.8333 11.2007C14.0098 10.8947 14.0577 10.5312 13.9665 10.19C13.8752 9.84876 13.6523 9.55769 13.3467 9.38065L13.2467 9.32732C13.0432 9.20985 12.8744 9.04069 12.7573 8.83699C12.6402 8.63329 12.5791 8.40226 12.58 8.16732V7.83398C12.5791 7.59904 12.6402 7.36802 12.7573 7.16431C12.8744 6.96061 13.0432 6.79146 13.2467 6.67398L13.3467 6.61398C13.6523 6.43695 13.8752 6.14587 13.9665 5.80465C14.0577 5.46343 14.0098 5.09994 13.8333 4.79398L13.6867 4.54065C13.5096 4.23501 13.2186 4.0121 12.8773 3.92086C12.5361 3.82961 12.1726 3.87749 11.8667 4.05398L11.7667 4.10732C11.564 4.22434 11.334 4.28595 11.1 4.28595C10.866 4.28595 10.636 4.22434 10.4333 4.10732L10.1467 3.94065C9.94418 3.82374 9.77599 3.65564 9.65898 3.45321C9.54196 3.25078 9.48024 3.02113 9.48 2.78732V2.66732C9.48 2.3137 9.33952 1.97456 9.08948 1.72451C8.83943 1.47446 8.50029 1.33398 8.14667 1.33398Z"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+        <path
+          d="M8 10C9.10457 10 10 9.10457 10 8C10 6.89543 9.10457 6 8 6C6.89543 6 6 6.89543 6 8C6 9.10457 6.89543 10 8 10Z"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </symbol>
+      <symbol id="editIcon" viewBox="0 0 16 16" fill="none">
+        <g>
+          <path
+            d="M8 13.334H14"
+            stroke="currentColor"
+            stroke-width="1.33333"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M11 2.33414C11.2652 2.06892 11.6249 1.91992 12 1.91992C12.1857 1.91992 12.3696 1.9565 12.5412 2.02757C12.7128 2.09864 12.8687 2.20281 13 2.33414C13.1313 2.46546 13.2355 2.62136 13.3066 2.79294C13.3776 2.96452 13.4142 3.14842 13.4142 3.33414C13.4142 3.51985 13.3776 3.70375 13.3066 3.87533C13.2355 4.04691 13.1313 4.20281 13 4.33414L4.66667 12.6675L2 13.3341L2.66667 10.6675L11 2.33414Z"
+            stroke="currentColor"
+            stroke-width="1.33333"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </g>
+      </symbol>
+      <symbol id="imageIcon" viewBox="0 0 40 40" fill="none">
+        <g>
+          <path
+            d="M31.6667 5H8.33333C6.49238 5 5 6.49238 5 8.33333V31.6667C5 33.5076 6.49238 35 8.33333 35H31.6667C33.5076 35 35 33.5076 35 31.6667V8.33333C35 6.49238 33.5076 5 31.6667 5Z"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M14.9974 18.3327C16.8383 18.3327 18.3307 16.8403 18.3307 14.9993C18.3307 13.1584 16.8383 11.666 14.9974 11.666C13.1564 11.666 11.6641 13.1584 11.6641 14.9993C11.6641 16.8403 13.1564 18.3327 14.9974 18.3327Z"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M35 25.0001L29.8567 19.8568C29.2316 19.2319 28.3839 18.8809 27.5 18.8809C26.6161 18.8809 25.7684 19.2319 25.1433 19.8568L10 35.0001"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </g>
+      </symbol>
+      <symbol id="imagePlus" viewBox="0 0 24 24" fill="none">
+        <g>
+          <path
+            d="M21 12V19C21 19.5304 20.7893 20.0391 20.4142 20.4142C20.0391 20.7893 19.5304 21 19 21H5C4.46957 21 3.96086 20.7893 3.58579 20.4142C3.21071 20.0391 3 19.5304 3 19V5C3 4.46957 3.21071 3.96086 3.58579 3.58579C3.96086 3.21071 4.46957 3 5 3H12"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M16 5H22"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M19 2V8"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M9 11C10.1046 11 11 10.1046 11 9C11 7.89543 10.1046 7 9 7C7.89543 7 7 7.89543 7 9C7 10.1046 7.89543 11 9 11Z"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M21 14.9997L17.914 11.9137C17.5389 11.5388 17.0303 11.3281 16.5 11.3281C15.9697 11.3281 15.4611 11.5388 15.086 11.9137L6 20.9997"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </g>
+      </symbol>
+      <symbol id="megaphone" viewBox="0 0 16 16" fill="none">
+        <g>
+          <path
+            d="M2 7.33333L14 4V12L2 9.33333V7.33333Z"
+            stroke="currentColor"
+            stroke-width="1.33333"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M7.73576 11.1995C7.66572 11.4534 7.54636 11.691 7.38449 11.8987C7.22263 12.1065 7.02142 12.2803 6.79237 12.4103C6.56332 12.5403 6.31091 12.624 6.04954 12.6564C5.78818 12.6889 5.52298 12.6695 5.26909 12.5995C5.0152 12.5294 4.77759 12.4101 4.56983 12.2482C4.36207 12.0863 4.18823 11.8851 4.05823 11.6561C3.92822 11.427 3.84461 11.1746 3.81216 10.9133C3.77971 10.6519 3.79905 10.3867 3.86909 10.1328"
+            stroke="currentColor"
+            stroke-width="1.33333"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </g>
+      </symbol>
+      <symbol id="location" viewBox="0 0 16 16" fill="none">
+        <g>
+          <path
+            d="M13.3307 6.66732C13.3307 10.6673 7.9974 14.6673 7.9974 14.6673C7.9974 14.6673 2.66406 10.6673 2.66406 6.66732C2.66406 5.25283 3.22597 3.89628 4.22616 2.89608C5.22635 1.89589 6.58291 1.33398 7.9974 1.33398C9.41188 1.33398 10.7684 1.89589 11.7686 2.89608C12.7688 3.89628 13.3307 5.25283 13.3307 6.66732Z"
+            stroke="currentColor"
+            stroke-width="1.33333"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M8 8.66602C9.10457 8.66602 10 7.77059 10 6.66602C10 5.56145 9.10457 4.66602 8 4.66602C6.89543 4.66602 6 5.56145 6 6.66602C6 7.77059 6.89543 8.66602 8 8.66602Z"
+            stroke="currentColor"
+            stroke-width="1.33333"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </g>
+      </symbol>
+      <symbol id="coins" viewBox="0 0 16 16" fill="none">
+        <g clip-path="url(#clip0_394_29255)">
+          <path
+            d="M5.33594 9.33398C7.54508 9.33398 9.33594 7.54312 9.33594 5.33398C9.33594 3.12485 7.54508 1.33398 5.33594 1.33398C3.1268 1.33398 1.33594 3.12485 1.33594 5.33398C1.33594 7.54312 3.1268 9.33398 5.33594 9.33398Z"
+            stroke="currentColor"
+            stroke-width="1.33333"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M12.0651 6.91211C12.6953 7.14706 13.2561 7.53713 13.6956 8.04624C14.1351 8.55535 14.4391 9.16707 14.5796 9.82482C14.72 10.4826 14.6924 11.1651 14.4991 11.8093C14.3059 12.4536 13.9533 13.0387 13.4741 13.5105C12.9948 13.9824 12.4043 14.3258 11.7571 14.5089C11.1099 14.6921 10.427 14.7091 9.77156 14.5584C9.11608 14.4077 8.50918 14.0942 8.00699 13.6468C7.5048 13.1994 7.12353 12.6326 6.89844 11.9988"
+            stroke="currentColor"
+            stroke-width="1.33333"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M4.66406 4H5.33073V6.66667"
+            stroke="currentColor"
+            stroke-width="1.33333"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M11.1399 9.25391L11.6066 9.72724L9.72656 11.6072"
+            stroke="currentColor"
+            stroke-width="1.33333"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </g>
+        <defs>
+          <clipPath id="clip0_394_29255">
+            <rect width="16" height="16" fill="white" />
+          </clipPath>
+        </defs>
+      </symbol>
+      <symbol id="copyIcon" viewBox="0 0 24 24" fill="none">
+        <path
+          d="M20 9H11C9.89543 9 9 9.89543 9 11V20C9 21.1046 9.89543 22 11 22H20C21.1046 22 22 21.1046 22 20V11C22 9.89543 21.1046 9 20 9Z"
+          stroke="black"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+        <path
+          d="M5 15H4C3.46957 15 2.96086 14.7893 2.58579 14.4142C2.21071 14.0391 2 13.5304 2 13V4C2 3.46957 2.21071 2.96086 2.58579 2.58579C2.96086 2.21071 3.46957 2 4 2H13C13.5304 2 14.0391 2.21071 14.4142 2.58579C14.7893 2.96086 15 3.46957 15 4V5"
+          stroke="black"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </symbol>
+      <symbol id="linkedin" viewBox="0 0 24 23" fill="none">
+        <path
+          d="M0.945312 1.64748C0.945312 0.738125 1.70662 0 2.64508 0H22.2446C23.1834 0 23.9443 0.738125 23.9443 1.64748V21.3518C23.9443 22.2614 23.1834 22.999 22.2446 22.999H2.64508C1.70671 22.999 0.945312 22.2615 0.945312 21.3521V1.64722V1.64748Z"
+          fill="#0A66C2"
+        />
+        <path
+          d="M7.93351 19.2479V8.89367H4.49192V19.2479H7.93387H7.93351ZM6.21343 7.48022C7.41334 7.48022 8.16036 6.68514 8.16036 5.69151C8.1379 4.67524 7.41334 3.90234 6.23625 3.90234C5.05836 3.90234 4.28906 4.67524 4.28906 5.69142C4.28906 6.68505 5.03581 7.48013 6.19088 7.48013H6.21316L6.21343 7.48022ZM9.83848 19.2479H13.2798V13.4663C13.2798 13.1572 13.3023 12.8473 13.3932 12.6266C13.6418 12.0081 14.2081 11.3678 15.1591 11.3678C16.4041 11.3678 16.9024 12.3172 16.9024 13.7093V19.2479H20.3436V13.3111C20.3436 10.1309 18.646 8.65092 16.3818 8.65092C14.5254 8.65092 13.7101 9.68848 13.2572 10.3952H13.2801V8.89403H9.83865C9.88357 9.86538 9.83839 19.2483 9.83839 19.2483L9.83848 19.2479Z"
+          fill="white"
+        />
+      </symbol>
+      <symbol id="facebook" viewBox="0 0 25 23" fill="none">
+        <path
+          d="M24.0547 11.4991C24.0547 5.1478 18.906 -0.000921249 12.5547 -0.000921249C6.20341 -0.000921249 1.05469 5.1478 1.05469 11.4991C1.05469 17.2391 5.26007 21.9966 10.7578 22.8594V14.8233H7.83789V11.4991H10.7578V8.96549C10.7578 6.0833 12.4747 4.49127 15.1015 4.49127C16.3597 4.49127 17.6758 4.71588 17.6758 4.71588V7.54595H16.2257C14.7971 7.54595 14.3516 8.43242 14.3516 9.34186V11.4991H17.541L17.0312 14.8233H14.3516V22.8594C19.8493 21.9966 24.0547 17.2391 24.0547 11.4991Z"
+          fill="#1877F2"
+        />
+      </symbol>
+      <symbol id="twitter" viewBox="0 0 24 23" fill="none">
+        <path
+          d="M17.5008 2.15625H20.671L13.7451 10.0721L21.8929 20.8438H15.5123L10.5155 14.3108L4.79812 20.8438H1.62604L9.03396 12.3769L1.21875 2.15625H7.75938L12.276 8.12762L17.4989 2.15625H17.5008ZM16.3882 18.9463H18.1448L6.80583 3.95408H4.92079L16.3882 18.9463Z"
+          fill="black"
+        />
+      </symbol>
+      <symbol id="EmailIcon" viewBox="0 0 24 23" fill="none">
+        <g clip-path="url(#clip0_399_34605)">
+          <path
+            d="M19.2188 3.83398H3.88542C2.82687 3.83398 1.96875 4.69211 1.96875 5.75065V17.2507C1.96875 18.3092 2.82687 19.1673 3.88542 19.1673H19.2188C20.2773 19.1673 21.1354 18.3092 21.1354 17.2507V5.75065C21.1354 4.69211 20.2773 3.83398 19.2188 3.83398Z"
+            stroke="black"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M21.1354 6.70898L12.5392 12.1715C12.2433 12.3569 11.9012 12.4552 11.5521 12.4552C11.2029 12.4552 10.8609 12.3569 10.565 12.1715L1.96875 6.70898"
+            stroke="black"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </g>
+        <defs>
+          <clipPath id="clip0_399_34605">
+            <rect
+              width="23"
+              height="23"
+              fill="white"
+              transform="translate(0.0546875)"
+            />
+          </clipPath>
+        </defs>
+      </symbol>
+    </svg>
+    <!-- js
+    =========================================== -->
+    <script src="./js/cartToggle.js"></script>
+  </body>
+</html>

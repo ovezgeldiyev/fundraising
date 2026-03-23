@@ -42,10 +42,10 @@
     <title>Upload Campaign Media</title>
   </head>
   <body>
-    <div class="edit__wrapper">
-      <div class="edit">
-        <h3>Campaign Images</h3>
-        <div class="editDrags">
+    <div class="n3o-edit__wrapper">
+      <div class="n3o-edit">
+        <h3 class="n3o-h3">Campaign Images</h3>
+        <div class="n3o-editDrags">
           <input
             type="file"
             class="filepond"
@@ -55,12 +55,12 @@
             data-max-files="3"
           />
         </div>
-        <div class="edit__content">
-          <h3>Campaign Video</h3>
-          <div class="editVideo">
-            <div class="input__outer">
-              <p>Youtube Video’s URL</p>
-              <form action="" class="input ex">
+        <div class="n3o-edit__content">
+          <h3 class="n3o-h3">Campaign Video</h3>
+          <div class="n3o-editVideo">
+            <div class="n3o-input__outer">
+              <p class="n3o-p">Youtube Video’s URL</p>
+              <form action="" class="n3o-input ex">
                 <input
                   type="text"
                   placeholder="example: https://youtu.be/tnGoQ5HcaoA"
@@ -69,7 +69,7 @@
                 />
                 <button
                   type="button"
-                  class="button primary ex"
+                  class="n3o-button primary ex"
                   id="sendUrl"
                   onclick="getId()"
                 >
@@ -77,7 +77,7 @@
                 </button>
               </form>
             </div>
-            <div class="editImage" id="myVideo">
+            <div class="n3o-editImage" id="myVideo">
               <iframe
                 width="560"
                 height="315"
@@ -89,9 +89,9 @@
               ></iframe>
             </div>
           </div>
-          <div class="input__outer" style="display: none">
-            <p>Youtube Video’s URL</p>
-            <div class="input">
+          <div class="n3o-input__outer" style="display: none">
+            <p class="n3o-p">Youtube Video’s URL</p>
+            <div class="n3o-input">
               <input
                 type="text"
                 placeholder="example: https://youtu.be/tnGoQ5HcaoA"
@@ -99,9 +99,9 @@
             </div>
           </div>
         </div>
-        <div class="edit__foot">
-          <button type="button" class="button secondary">Cancel</button>
-          <button type="submit" class="button primary">Save</button>
+        <div class="n3o-edit__foot">
+          <button type="button" class="n3o-button secondary">Cancel</button>
+          <button type="submit" class="n3o-button primary">Save</button>
         </div>
       </div>
     </div>

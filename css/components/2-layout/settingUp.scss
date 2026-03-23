@@ -1,4 +1,43 @@
-.setting {
+.n3o-setting {
+  font-family: $mainFont;
+  color: $black;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+ 
+  a {
+    text-decoration: none;
+    opacity: 1;
+    color: $white;
+    transition: 0.3s ease;
+    cursor: pointer;
+    &:hover {
+      opacity: 0.88;
+    }
+  }
+  ul {
+    li {
+      list-style: none;
+    }
+  }
+  button {
+    outline: none;
+  }
+  button:focus {
+    outline: none;
+  }
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  input[type="search"]::-webkit-search-cancel-button,
+  input[type="search"]::-webkit-search-decoration,
+  input[type="search"]::-webkit-search-results-button,
+  input[type="search"]::-webkit-search-results-decoration {
+    display: none;
+  }
+
   margin: auto;
   box-shadow: 0px 10px 10px -5px rgba(0, 0, 0, 0.04),
     0px 5px 64px 10px rgba(0, 0, 0, 0.08);
@@ -19,10 +58,10 @@
     &.active {
       display: flex;
     }
-    & > h4 {
+    & > .n3o-h4 {
       margin-bottom: $space-md;
     }
-    .button {
+    .n3o-button {
       width: 100%;
       margin-bottom: $space-3xl;
       &:last-child {
@@ -32,22 +71,22 @@
         opacity: 0.2;
       }
     }
-    .input {
+    .n3o-input {
       margin: $space-md 0 0;
       &__outer {
         margin-bottom: $space-3xl;
-        p {
+        .n3o-subtle {
           margin: $space-md 0 0;
         }
       }
     }
-    .subtle {
+    .n3o-subtle {
       color: $slate500;
     }
-    .check {
+    .n3o-check {
       &__outer {
         margin-bottom: $space-3xl;
-        h4 {
+        .n3o-h4 {
           margin-bottom: $space-md;
         }
       }
@@ -71,11 +110,11 @@
         width: 100%;
       }
     }
-    .subtle {
+    .n3o-subtle {
       font-weight: 600;
       color: $theme-primary;
     }
-    p {
+    .n3o-p {
       color: $theme-primary;
     }
   }
@@ -232,7 +271,7 @@
       }
     }
   }
-  .select {
+  .n3o-select {
     border: 1px solid $theme-border-color;
     border-radius: $corner-md;
     box-sizing: border-box;
@@ -292,7 +331,7 @@
       right: $space-xl;
     }
   }
-  .cta__input {
+  .n3o-cta__input {
     margin-bottom: $space-3xl;
     display: none;
     &.active {

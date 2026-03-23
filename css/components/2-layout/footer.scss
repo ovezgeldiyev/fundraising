@@ -1,4 +1,43 @@
-.footer {
+.n3o-footer {
+  font-family: $mainFont;
+  color: $black;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+ 
+  a {
+    text-decoration: none;
+    opacity: 1;
+    color: $white;
+    transition: 0.3s ease;
+    cursor: pointer;
+    &:hover {
+      opacity: 0.88;
+    }
+  }
+  ul {
+    li {
+      list-style: none;
+    }
+  }
+  button {
+    outline: none;
+  }
+  button:focus {
+    outline: none;
+  }
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  input[type="search"]::-webkit-search-cancel-button,
+  input[type="search"]::-webkit-search-decoration,
+  input[type="search"]::-webkit-search-results-button,
+  input[type="search"]::-webkit-search-results-decoration {
+    display: none;
+  }
+
   padding: 57px 0 45px;
   background-color: $slate800;
   color: $white;
@@ -27,10 +66,10 @@
     }
     &-title {
       max-width: 407px;
-      h2 {
+      .n3o-h2 {
         margin-bottom: 10px;
       }
-      p {
+      .n3o-p {
         opacity: 0.5;
       }
     }
@@ -59,7 +98,7 @@
         max-width: 400px;
         padding: 0;
       }
-      .subtle {
+      .n3o-subtle {
         margin-right: $space-5xl;
         color: $slate400;
         &:last-child {
@@ -82,7 +121,7 @@
           width: 100%;
         }
       }
-      p {
+      .n3o-p {
         opacity: 0.5;
       }
     }
@@ -115,7 +154,7 @@
 }
 // 1024px
 @mixin footer-lg-xlg {
-  .footer {
+  .n3o-footer {
     padding: 40px 0;
     &__inner {
       &-row {
@@ -128,7 +167,7 @@
       }
       &-side {
         padding: 0;
-        .subtle {
+        .n3o-subtle {
           margin-right: 18px;
         }
       }
@@ -140,7 +179,7 @@
 }
 // 930px
 @mixin footer-md-lg {
-  .footer {
+  .n3o-footer {
     padding: 30px 0;
     &__inner {
       &-row {
@@ -171,12 +210,12 @@
 }
 // 750px
 @mixin footer-sm-md {
-  .footer {
+  .n3o-footer {
   }
 }
 // 650px
 @mixin footer-sm-md-extra {
-  .footer {
+  .n3o-footer {
     padding: 24px 0;
     &__inner {
       &-row {
@@ -207,14 +246,14 @@
         flex-direction: column;
         align-items: center;
         text-align: center;
-        .subtle {
+        .n3o-subtle {
           margin: 0;
         }
       }
       &-links {
         justify-content: center;
         padding-top: 20px;
-        .subtle {
+        .n3o-subtle {
           margin-right: 32px;
           &:last-child {
             margin: 0;
@@ -234,11 +273,11 @@
 }
 // 540px
 @mixin footer-xsm-sm {
-  .footer {
+  .n3o-footer {
   }
 }
 // 390px
 @mixin footer-xxxsm-xxsm {
-  .footer {
+  .n3o-footer {
   }
 }

@@ -1,4 +1,43 @@
-.payment {
+.n3o-payment {
+  font-family: $mainFont;
+  color: $black;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+ 
+  a {
+    text-decoration: none;
+    opacity: 1;
+    color: $white;
+    transition: 0.3s ease;
+    cursor: pointer;
+    &:hover {
+      opacity: 0.88;
+    }
+  }
+  ul {
+    li {
+      list-style: none;
+    }
+  }
+  button {
+    outline: none;
+  }
+  button:focus {
+    outline: none;
+  }
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  input[type="search"]::-webkit-search-cancel-button,
+  input[type="search"]::-webkit-search-decoration,
+  input[type="search"]::-webkit-search-results-button,
+  input[type="search"]::-webkit-search-results-decoration {
+    display: none;
+  }
+
   background-color: $white;
   border-radius: $corner-sm;
   width: 100%;
@@ -30,7 +69,7 @@
         align-items: center;
         margin-bottom: $space-sm;
         color: $black;
-        p {
+        .n3o-p {
           font-weight: 400;
           b {
             font-weight: 500;
@@ -44,20 +83,20 @@
         padding-top: $space-sm;
         border-top: 1px solid $theme-border-color;
         margin-bottom: $space-2xl;
-        p {
+        .n3o-p {
           font-weight: 700;
           color: $black;
         }
       }
 
-      h4 {
+      .n3o-h4 {
         margin-bottom: $space-xl;
       }
     }
     &__foot {
       display: flex;
       justify-content: center;
-      .button {
+      .n3o-button {
         width: 100%;
         display: none;
         border-radius: 6px;
@@ -96,7 +135,7 @@
         }
       }
     }
-    & > h4 {
+    & > .n3o-h4 {
       margin-bottom: $space-2xl;
     }
   }
@@ -156,7 +195,7 @@
         cursor: pointer;
         z-index: 2;
         &:checked {
-          & ~ .paymentItem__radio {
+          & ~ .n3o-paymentItem__radio {
             span {
               opacity: 1;
             }
@@ -176,7 +215,7 @@
         display: flex;
         animation: fadeIn 0.3s ease;
       }
-      .input {
+      .n3o-input {
         &.ex {
           input {
             padding-right: 150px;
@@ -189,7 +228,7 @@
             width: calc(50% - 4px);
             max-width: 165px;
           }
-          .subtle {
+          .n3o-subtle {
             color: #0f172a;
             font-weight: 500;
             margin-bottom: $space-sm;
@@ -254,14 +293,14 @@
       }
     }
   }
-  .checkout {
+  .n3o-checkout {
     width: 100%;
     max-width: unset;
     background: transparent;
     box-shadow: unset;
     border-radius: unset;
   }
-  .steps {
+  .n3o-steps {
     width: 100%;
     max-width: unset;
     background: transparent;
@@ -273,7 +312,7 @@
         background-color: $theme-primary;
       }
     }
-    .detail {
+    .n3o-detail {
       color: $slate500;
     }
   }

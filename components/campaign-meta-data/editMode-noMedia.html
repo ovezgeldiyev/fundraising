@@ -43,10 +43,10 @@
   </head>
 
   <body>
-    <div class="campaign__wrapper">
-      <div class="campaign">
-        <div class="campaign__top">
-          <div class="campaign__edit modallBtn" data-mod="#modal-5">
+    <div class="n3o-campaign__wrapper">
+      <div class="n3o-campaign">
+        <div class="n3o-campaign__top">
+          <div class="n3o-campaign__edit modallBtn" data-mod="#modal-5">
             <svg>
               <use xlink:href="#imagePlus"></use>
             </svg>
@@ -56,44 +56,50 @@
             <use xlink:href="#imageIcon"></use>
           </svg>
         </div>
-        <div class="campaign__content">
-          <div class="campaign__edit modallBtn" data-mod="#modal-6">
+        <div class="n3o-campaign__content">
+          <div class="n3o-campaign__edit modallBtn" data-mod="#modal-6">
             <svg class="sm">
               <use xlink:href="#editIcon"></use>
             </svg>
             <b> Edit </b>
           </div>
-          <div class="campaign__title">
-            <h2>Lorem qui deserunt aute exercitation</h2>
-            <p>{User Name} is fundraising for {team name}.</p>
+          <div class="n3o-campaign__title">
+            <h2 class="n3o-h2">Lorem qui deserunt aute exercitation</h2>
+            <p class="n3o-p">{User Name} is fundraising for {team name}.</p>
           </div>
-          <div class="fprogress">
-            <div class="fprogress__row">
-              <h4>0 Supporters</h4>
-              <h4>£0 / £3.000</h4>
+          <div class="n3o-fprogress">
+            <div class="n3o-campaign__edit">
+              <svg class="sm">
+                <use xlink:href="#editIcon"></use>
+              </svg>
+              <b> Edit </b>
             </div>
-            <div class="fprogress__row">
-              <div class="detail">0% Collected</div>
-              <div class="detail">Open Ended</div>
+            <div class="n3o-fprogress__row">
+              <h4 class="n3o-h4">0 Supporters</h4>
+              <h4 class="n3o-h4">£0 / £3.000</h4>
             </div>
-            <div class="fprogress__bar">
+            <div class="n3o-fprogress__row">
+              <div class="n3o-detail">0% Collected</div>
+              <div class="n3o-detail">Open Ended</div>
+            </div>
+            <div class="n3o-fprogress__bar">
               <span style="max-width: 0%"></span>
             </div>
           </div>
-          <div class="campaign__footer">
-            <a href="#" class="campaign__footer-tag">
+          <div class="n3o-campaign__footer">
+            <a href="#" class="n3o-campaign__footer-tag">
               <svg>
                 <use xlink:href="#megaphone"></use>
               </svg>
               <b> Education Campaign </b>
             </a>
-            <a href="#" class="campaign__footer-tag">
+            <a href="#" class="n3o-campaign__footer-tag">
               <svg>
                 <use xlink:href="#location"></use>
               </svg>
               <b> Zambia </b>
             </a>
-            <a href="#" class="campaign__footer-tag">
+            <a href="#" class="n3o-campaign__footer-tag">
               <svg>
                 <use xlink:href="#coins"></use>
               </svg>
@@ -104,10 +110,10 @@
       </div>
     </div>
     <!-- modals -->
-    <div class="modalsItem modall" id="modal-5">
-      <div class="edit">
-        <h3>Upload Campaign Images</h3>
-        <div class="editDrags">
+    <div class="n3o-modalsItem modall" id="modal-5">
+      <div class="n3o-edit">
+        <h3 class="n3o-h3">Upload Campaign Images</h3>
+        <div class="n3o-editDrags">
           <input
             type="file"
             class="filepond"
@@ -117,11 +123,11 @@
             data-max-files="3"
           />
         </div>
-        <div class="edit__content">
-          <h3>Campaign Video</h3>
-          <div class="input__outer">
-            <p>Youtube Video’s URL</p>
-            <div class="input">
+        <div class="n3o-edit__content">
+          <h3 class="n3o-h3">Campaign Video</h3>
+          <div class="n3o-input__outer">
+            <p class="n3o-p">Youtube Video’s URL</p>
+            <div class="n3o-input">
               <input
                 type="text"
                 placeholder="example: https://youtu.be/tnGoQ5HcaoA"
@@ -129,22 +135,22 @@
             </div>
           </div>
         </div>
-        <div class="edit__foot">
-          <button type="button" class="button secondary">Cancel</button>
-          <button type="submit" class="button primary">Save</button>
+        <div class="n3o-edit__foot">
+          <button type="button" class="n3o-button secondary">Cancel</button>
+          <button type="submit" class="n3o-button primary">Save</button>
         </div>
       </div>
     </div>
-    <div class="modalsItem modall" id="modal-6">
-      <div class="edit">
-        <h3>Campaign Name</h3>
-        <div class="input big">
+    <div class="n3o-modalsItem modall" id="modal-6">
+      <div class="n3o-edit">
+        <h3 class="n3o-h3">Campaign Name</h3>
+        <div class="n3o-input big">
           <input type="text" placeholder="E.g. Building a school" />
         </div>
-        <div class="edit__content">
-          <div class="input__outer dark">
-            <p>Short Description (Optional)</p>
-            <div class="input">
+        <div class="n3o-edit__content">
+          <div class="n3o-input__outer dark">
+            <p class="n3o-p">Short Description (Optional)</p>
+            <div class="n3o-input">
               <textarea
                 name=""
                 id=""
@@ -153,14 +159,14 @@
               ></textarea>
             </div>
           </div>
-          <p class="subtle">
+          <p class="n3o-subtle">
             Slightly longer text that will appear after the campaign name. You
             can write up to 160 characters.
           </p>
         </div>
-        <div class="edit__foot">
-          <button type="button" class="button secondary">Cancel</button>
-          <button type="submit" class="button primary">Save</button>
+        <div class="n3o-edit__foot">
+          <button type="button" class="n3o-button secondary">Cancel</button>
+          <button type="submit" class="n3o-button primary">Save</button>
         </div>
       </div>
     </div>

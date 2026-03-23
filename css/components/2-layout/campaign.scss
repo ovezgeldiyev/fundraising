@@ -1,4 +1,43 @@
-.campaign {
+.n3o-campaign {
+  font-family: $mainFont;
+  color: $black;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+ 
+  a {
+    text-decoration: none;
+    opacity: 1;
+    color: $white;
+    transition: 0.3s ease;
+    cursor: pointer;
+    &:hover {
+      opacity: 0.88;
+    }
+  }
+  ul {
+    li {
+      list-style: none;
+    }
+  }
+  button {
+    outline: none;
+  }
+  button:focus {
+    outline: none;
+  }
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  input[type="search"]::-webkit-search-cancel-button,
+  input[type="search"]::-webkit-search-decoration,
+  input[type="search"]::-webkit-search-results-button,
+  input[type="search"]::-webkit-search-results-decoration {
+    display: none;
+  }
+
   width: 100%;
   max-width: 625px;
   margin: auto;
@@ -112,16 +151,16 @@
     position: relative;
     box-sizing: border-box;
 
-    p {
+    .n3o-p {
       &.em {
         font-style: italic;
       }
     }
     & > {
-      h2 {
+      .n3o-h2 {
         margin-bottom: $space-2xl;
       }
-      p {
+      .n3o-p {
         margin-bottom: $space-2xl;
         &:last-child {
           margin: 0;
@@ -163,14 +202,14 @@
     margin-bottom: $space-xl;
     &.big {
       margin-bottom: $space-2xl;
-      h2 {
+      .n3o-h2 {
         margin-bottom: $space-2xl;
       }
     }
     &:last-child {
       margin: 0;
     }
-    h2 {
+    .n3o-h2 {
       margin-bottom: $space-xl;
       padding-right: 40px;
     }
@@ -204,10 +243,11 @@
     }
   }
 }
-.fprogress {
+.n3o-fprogress {
   background-color: $theme-page-bg;
   border-radius: $corner-lg;
   padding: $space-lg;
+  position: relative;
   &__row {
     display: flex;
     justify-content: space-between;
@@ -233,7 +273,7 @@
       min-width: 11px;
     }
   }
-  h4 {
+  .n3o-h4 {
     color: $slate900;
     width: 55%;
     overflow: hidden;
@@ -246,7 +286,13 @@
       text-align: end;
     }
   }
-  .detail {
+  .n3o-detail {
     color: $slate600;
+  }
+  .n3o-campaign {
+    &__edit  {
+      top: 0;
+      transform: translate($space-7xl, -75%);
+    } 
   }
 }

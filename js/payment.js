@@ -1,6 +1,6 @@
-const formBtns = document.querySelectorAll(".paymentBtn");
+const formBtns = document.querySelectorAll(".n3o-paymentBtn");
 const debit = document.getElementById("paymentInputs");
-const paymentItems = document.querySelectorAll(".paymentItem");
+const paymentItems = document.querySelectorAll(".n3o-paymentItem");
 const paymentMessage = document.getElementById("paymentMessage");
 
 paymentItems.forEach((paymentItem) => {

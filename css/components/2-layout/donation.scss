@@ -1,4 +1,43 @@
-.donation {
+.n3o-donation {
+  font-family: $mainFont;
+  color: $black;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+ 
+  a {
+    text-decoration: none;
+    opacity: 1;
+    color: $white;
+    transition: 0.3s ease;
+    cursor: pointer;
+    &:hover {
+      opacity: 0.88;
+    }
+  }
+  ul {
+    li {
+      list-style: none;
+    }
+  }
+  button {
+    outline: none;
+  }
+  button:focus {
+    outline: none;
+  }
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  input[type="search"]::-webkit-search-cancel-button,
+  input[type="search"]::-webkit-search-decoration,
+  input[type="search"]::-webkit-search-results-button,
+  input[type="search"]::-webkit-search-results-decoration {
+    display: none;
+  }
+
   margin: auto;
   background: $white;
   box-shadow: 0px 10px 10px -5px rgba(0, 0, 0, 0.04),
@@ -52,7 +91,7 @@
   &__title {
     margin-bottom: $space-5xl;
 
-    h2 {
+    .n3o-h2 {
       display: flex;
       align-items: center;
       span {
@@ -85,12 +124,12 @@
       transition: 0.3s ease;
       &.active {
         border-color: $theme-button-color;
-        h4 {
+        .n3o-h4 {
           color: $slate900;
         }
       }
     }
-    h4 {
+    .n3o-h4 {
       color: $slate600;
       transition: 0.3s ease;
       span {
@@ -117,7 +156,7 @@
       }
     }
     &.fund {
-      .donationItem {
+      .n3o-donationItem {
         margin-bottom: $space-4xl;
       }
     }
@@ -129,7 +168,7 @@
   &__foot {
     display: flex;
     padding-top: $space-md;
-    .button {
+    .n3o-button {
       width: 100%;
       &.secondary {
         &:hover {
@@ -163,7 +202,7 @@
       max-width: 230px;
       margin: $space-xl;
     }
-    p {
+    .n3o-p {
       max-width: 170px;
     }
   }
@@ -201,17 +240,17 @@
       &.big {
         width: 220px;
       }
-      .large {
+      .n3o-large {
         margin-bottom: 4px;
         &:last-child {
           margin: 0;
         }
-        p {
+        .n3o-p {
           display: inline-block;
           font-weight: 400;
         }
       }
-      .subtle {
+      .n3o-subtle {
         margin-bottom: 4px;
         &:last-child {
           margin: 0;

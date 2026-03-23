@@ -15,47 +15,69 @@
   </head>
 
   <body>
-    <div class="newAccount__wrapper">
-      <div class="newAccount" id="newAccount">
-        <div class="newAccount__head">
-          <h4>Detail for New Account</h4>
-          <div class="detail">Add some information about your new account</div>
+    <div class="n3o-newAccount__wrapper">
+      <div class="n3o-newAccount" id="newAccount">
+        <div class="n3o-newAccount__head">
+          <h4 class="n3o-h4">Detail for New Account</h4>
+          <div class="n3o-detail">
+            Add some information about your new account
+          </div>
         </div>
-        <div class="newAccount__body">
-          <div class="input__outer">
-            <h4>Your Name</h4>
-            <div class="input">
-              <input type="text" />
+        <div class="n3o-newAccount__body">
+          <div class="n3o-input__outer">
+            <h4 class="n3o-h4">Your Name</h4>
+            <div class="n3o-input__row">
+              <div class="n3o-input sel w-20">
+                <select name="" id="">
+                  <option value="mr">Mr</option>
+                  <option value="mrs">Mrs</option>
+                  <option value="ms">Ms</option>
+                </select>
+              </div>
+              <div class="n3o-input w-40">
+                <input type="text" placeholder="First Name" />
+              </div>
+              <div class="n3o-input w-40">
+                <input type="text" placeholder="Last Name" />
+              </div>
             </div>
           </div>
-          <div class="input__outer">
-            <h4>Phone Number</h4>
-            <div class="input">
-              <input type="tel" />
+          <div class="n3o-input__outer">
+            <h4 class="n3o-h4">Phone Number</h4>
+            <div class="n3o-input">
+              <input
+                type="tel"
+                placeholder="Phone number"
+                value="+44788723541"
+              />
             </div>
           </div>
-          <div class="newAccount__address">
-            <h4>Address</h4>
-            <div class="input">
-              <input type="text" placeholder="Address Line" />
+          <div class="n3o-newAccount__address">
+            <h4 class="n3o-h4">Address</h4>
+            <div class="n3o-input">
+              <input
+                type="text"
+                placeholder="Address Line"
+                value="229 Great Portland Street"
+              />
             </div>
-            <div class="input sel">
+            <div class="n3o-input sel">
               <select name="" id="">
                 <option value="" hidden>Country</option>
                 <option value="usa">USA</option>
-                <option value="uk">United Kingdom</option>
+                <option value="uk" selected>United Kingdom</option>
                 <option value="france">France</option>
                 <option value="italy">Italy</option>
               </select>
             </div>
-            <div class="input">
-              <input type="text" placeholder="Postcode" />
+            <div class="n3o-input">
+              <input type="text" placeholder="Postcode" value="W1W 5PN" />
             </div>
           </div>
           <button
             type="button"
             disabled
-            class="button primary"
+            class="n3o-button primary"
             id="newAccountBtn"
           >
             Continue

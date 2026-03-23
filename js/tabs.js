@@ -1,6 +1,6 @@
 // const donationTabs = document.getElementById("donationTabs");
 // if (donationTabs) {
-//   myTabs = donationTabs.querySelectorAll(".donation__head-tab");
+//   myTabs = donationTabs.querySelectorAll(".n3o-donation__head-tab");
 //   myTabs.forEach((myTab) => {
 //     myTab.onclick = () => {
 //       myTab.classList.add("active");

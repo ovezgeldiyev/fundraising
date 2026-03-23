@@ -38,6 +38,7 @@ $space-3xl: var(--space-3xl);
 $space-4xl: var(--space-4xl);
 $space-5xl: var(--space-5xl);
 $space-6xl: var(--space-6xl);
+$space-7xl: var(--space-7xl);
 // roudedness
 $corner-2xs: var(--corner-2xs);
 $corner-xs: var(--corner-xs);
@@ -72,9 +73,10 @@ $corner-full: var(--corner-full);
   --space-xl: 16px;
   --space-2xl: 20px;
   --space-3xl: 24px;
-  --space-4xl: 32px;
+  --space-4xl: 28px;
   --space-5xl: 32px;
   --space-6xl: 40px;
+  --space-7xl: 48px;
   // roudedness
   --corner-2xs: 2px;
   --corner-xs: 4px;
@@ -138,6 +140,7 @@ html {
     --space-4xl: 22px;
     --space-5xl: 28px;
     --space-6xl: 32px;
+    --space-7xl: 40px;
   }
   &.spacious {
     --space-2xs: 4px;
@@ -152,6 +155,7 @@ html {
     --space-4xl: 40px;
     --space-5xl: 44px;
     --space-6xl: 48px;
+    --space-7xl: 64px;
   }
   // roudedness
   &.lessRounded {

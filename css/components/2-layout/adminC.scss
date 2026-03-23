@@ -1,4 +1,43 @@
-.adminC {
+.n3o-adminC {
+  font-family: $mainFont;
+  color: $black;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+ 
+  a {
+    text-decoration: none;
+    opacity: 1;
+    color: $white;
+    transition: 0.3s ease;
+    cursor: pointer;
+    &:hover {
+      opacity: 0.88;
+    }
+  }
+  ul {
+    li {
+      list-style: none;
+    }
+  }
+  button {
+    outline: none;
+  }
+  button:focus {
+    outline: none;
+  }
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  input[type="search"]::-webkit-search-cancel-button,
+  input[type="search"]::-webkit-search-decoration,
+  input[type="search"]::-webkit-search-results-button,
+  input[type="search"]::-webkit-search-results-decoration {
+    display: none;
+  }
+
   margin: auto;
   background: $slate50;
   box-shadow: 0px 10px 10px -5px rgba(0, 0, 0, 0.04),
@@ -18,7 +57,7 @@
     align-items: center;
     justify-content: space-between;
     margin-bottom: $space-md;
-    p {
+    .n3o-p {
       font-weight: 500;
       color: $slate900;
     }
@@ -103,7 +142,7 @@
       justify-content: center;
       align-items: center;
     }
-    .range {
+    .n3o-range {
       position: relative;
       width: 100%;
       &__tip {
@@ -140,7 +179,7 @@
     &:last-child {
       margin: 0;
     }
-    .detail {
+    .n3o-detail {
       width: 100%;
       color: $slate500;
       margin-bottom: $space-xl;
@@ -163,7 +202,7 @@
     &:last-child {
       margin: 0;
     }
-    p {
+    .n3o-p {
       font-weight: 500;
     }
   }
@@ -195,7 +234,7 @@
       opacity: 0.88;
     }
   }
-  .cta {
+  .n3o-cta {
     &__input {
       margin-bottom: $space-md;
       display: none;

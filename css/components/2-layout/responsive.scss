@@ -4,6 +4,11 @@
 }
 // 1380px
 @include xxxlg-xxxxlg {
+  .n3o-h1 {
+    &.big {
+      font-size: 60px;
+    }
+  }
   // @include hero-xxxlg-xxxxlg;
 }
 // 1250px
@@ -15,12 +20,17 @@
   .auto__container {
     padding: 0 22px;
   }
-  .account {
+  .n3o-h1 {
+    &.big {
+      font-size: 55px;
+    }
+  }
+  .n3o-account {
     &.sm {
       padding: $space-xl;
-      .account {
+      .n3o-account {
         &__buttons {
-          .button {
+          .n3o-button {
             margin-right: $space-sm;
             padding: $space-md $space-lg;
           }
@@ -28,24 +38,36 @@
       }
     }
   }
+  .n3o-search {
+    &Sec {
+      &__input {
+        margin-bottom: 70px;
+      }
+    }
+  }
+  @include header-xlg-xxlg;
   @include hero-xlg-xxlg;
   @include info-xlg-xxlg;
+  @include spotlight-xlg-xxlg;
+  @include card-xlg-xxlg;
+  @include intro-xlg-xxlg;
+  @include explore-xlg-xxlg;
 }
 // 1024px
 @include lg-xlg {
   ::-webkit-scrollbar {
     display: none;
   }
-  .account {
+  .n3o-account {
     &.sm {
       padding: $space-3xl;
-      .account {
+      .n3o-account {
         &__main {
           width: 100%;
           max-width: unset;
         }
         &__buttons {
-          .button {
+          .n3o-button {
             margin-right: $space-xl;
             padding: $space-lg $space-xl;
           }
@@ -53,26 +75,285 @@
       }
     }
   }
+  .n3o-h1 {
+    &.big {
+      font-size: 45px;
+    }
+  }
+  .n3o-h2 {
+    &.big {
+      font-size: 30px;
+    }
+  }
+  // mh
+  ._primary-header ._navigation ._cta-column {
+    width: 100% !important;
+    padding: 12px;
+  }
+  .--mh {
+    &checkoutm {
+      padding-top: 60px;
+      &__breadcrumb {
+        display: none;
+      }
+      &__total {
+        width: calc(100% + 40px);
+        margin: 0 -20px 20px;
+        border: unset;
+        justify-content: space-between;
+        .n3o-h4 {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-end;
+        }
+      }
+      &__wrapper {
+        padding-top: 35px;
+        margin-bottom: 35px;
+      }
+      &__inner {
+        padding: 35px 0;
+      }
+      &__content {
+        margin-bottom: 35px;
+        .n3o-h2 {
+          margin-bottom: 20px;
+        }
+      }
+      &__form {
+        padding: 24px 30px;
+        margin-bottom: 30px;
+      }
+      &Top {
+        &__inner {
+          padding: 50px 0;
+        }
+      }
+      &__total {
+        .n3o-h3 {
+          font-size: 24px;
+        }
+        .n3o-h4 {
+          font-size: 28px;
+          margin-left: 18px;
+          span {
+            margin: 0 8px;
+          }
+        }
+      }
+    }
+    &cart {
+      &Btn {
+        display: none;
+        position: absolute;
+        top: 50%;
+        right: 20px;
+        transform: translateY(-50%);
+        width: 25px;
+        height: 25px;
+        &.mob {
+          display: flex;
+        }
+        &__outer {
+          width: 100%;
+        }
+        span {
+          width: 14px;
+          height: 14px;
+        }
+      }
+    }
+  }
+
   @include info-lg-xlg;
+  @include spotlight-lg-xlg;
+  @include card-lg-xlg;
+  @include explore-lg-xlg;
   @include footer-lg-xlg;
 }
 // 930px
 @include md-lg {
+  .n3o-h1 {
+    font-size: 40px;
+    &.big {
+      font-size: 45px;
+    }
+  }
+  .n3o-search {
+    &Sec {
+      &__inner {
+        &-gallery {
+          display: none;
+        }
+        &-content {
+          width: 100%;
+          max-width: unset;
+          padding: 35px 0;
+        }
+      }
+      &__input {
+        margin-bottom: 40px;
+      }
+    }
+  }
+  .n3o-filter {
+    width: calc(100% + 44px);
+    margin: 0 -22px;
+    flex-direction: row;
+    overflow: auto;
+    padding: 12px 22px 0;
+    box-sizing: border-box;
+    &Item {
+      white-space: nowrap;
+      margin: 0 4px 0 0;
+      font-size: 12px;
+      line-height: 20px;
+      &:last-child {
+        margin: 0;
+      }
+    }
+  }
+  @include hero-md-lg;
+  @include card-md-lg;
+  @include spotlight-md-lg;
+  @include intro-md-lg;
+  @include explore-md-lg;
   @include footer-md-lg;
 }
 // 750px
 @include sm-md {
+  // mh
+  .n3o-h1 {
+    &.big {
+      font-size: 35px;
+    }
+  }
+  .n3o-h2 {
+    &.big {
+      font-size: 22px;
+    }
+  }
+  .--mh {
+    &checkoutm {
+      &__total {
+        .n3o-h3 {
+          font-size: 18px;
+        }
+        .n3o-h4 {
+          font-size: 20px;
+          margin-left: 12px;
+          span {
+            margin: 0 5px;
+          }
+        }
+      }
+      &__inner {
+        padding: 25px 0;
+      }
+      &__breadcrumb {
+        margin-bottom: 20px;
+      }
+      &__form {
+        background-color: unset;
+        padding: 0;
+        border: unset;
+        &-date {
+          margin: 20px 0;
+          padding: 20px 0;
+          &::before {
+            display: none;
+          }
+          &::after {
+            display: none;
+          }
+          .--mhcheckoutmItem {
+            &.big {
+              margin-bottom: 24px;
+            }
+          }
+        }
+      }
+      &Payment {
+        padding-top: 26px;
+        margin-top: 26px;
+        &::before {
+          display: none;
+        }
+        &__inner {
+          width: 100%;
+          flex-direction: column;
+        }
+        &__col {
+          width: 100%;
+          max-width: unset;
+          margin-bottom: 24px;
+          &:last-child {
+            margin: 0;
+          }
+        }
+        &__image {
+          img {
+            max-width: 307px;
+          }
+        }
+      }
+  
+      &Item {
+        margin-bottom: 10px;
+        &.big {
+          margin-bottom: 10px;
+        }
+        &__content {
+          width: 100%;
+        }
+        &__row {
+          width: 100%;
+          flex-direction: column;
+          .--mhinputm {
+            margin-bottom: 10px;
+            &:last-child {
+              margin: 0;
+            }
+          }
+        }
+        &__image {
+          margin: 0 auto;
+          width: 235px;
+        }
+        & > .n3o-p {
+          display: none;
+        }
+        .--mhinputm {
+          width: 100%;
+        }
+        .n3o-p {
+          font-size: 15px;
+        }
+      }
+    }
+    &inputm {
+      input,
+      select {
+        font-size: 15px !important;
+        padding: 15px !important;
+      }
+      select {
+        padding: 17px 15px !important;
+      }
+    }
+  }
+
   // @include hero-sm-md;
   @include onboard-sm-md;
 }
 // 650px
 @include sm-md-extra {
-  .account {
+  .n3o-account {
     &.sm {
       padding: $space-2xl;
-      .account {
+      .n3o-account {
         &__buttons {
-          .button {
+          .n3o-button {
             padding: $space-lg $space-4xl;
           }
         }
@@ -91,28 +372,39 @@
     }
   }
   @include header-sm-md-extra;
+  @include hero-sm-md-extra;
   @include info-sm-md-extra;
+  @include card-sm-md-extra;
+  @include spotlight-sm-md-extra;
+  @include intro-sm-md-extra;
+  @include explore-sm-md-extra;
   @include footer-sm-md-extra;
 }
 // 540px
 @include xsm-sm {
-  h2 {
+  .n3o-h1 {
+    font-size: 30px;
+    &.big {
+      font-size: 30px;
+    }
+  }
+  .n3o-h2 {
     font-size: 24px;
     line-height: 28px;
   }
-  h3 {
+  .n3o-h3 {
     font-size: 20px;
     line-height: 24px;
   }
-  h4 {
+  .n3o-h4 {
     font-size: 16px;
     line-height: 20px;
   }
-  .large {
+  .n3o-large {
     font-size: 16px;
     line-height: 24px;
   }
-  p {
+  .n3o-p {
     font-size: 14px;
     line-height: 20px;
     &.sm {
@@ -120,7 +412,7 @@
       line-height: 18px;
     }
   }
-  .campaign {
+  .n3o-campaign {
     &__title {
       margin-bottom: $space-md;
     }
@@ -130,23 +422,23 @@
     &__edit {
       top: $space-xl;
     }
-    h2 {
+    .n3o-h2 {
       font-size: 24px;
       line-height: 32px;
       margin-bottom: $space-md;
     }
-    p {
+    .n3o-p {
       font-size: 14px;
       line-height: 20px;
     }
   }
-  .fprogress {
-    h4 {
+  .n3o-fprogress {
+    .n3o-h4 {
       font-size: 16px;
       line-height: 24px;
     }
   }
-  .donation {
+  .n3o-donation {
     padding: $space-2xl;
     &Item {
       margin-bottom: $space-2xl;
@@ -155,19 +447,19 @@
       &-tab {
         padding: 10px 8px;
       }
-      h4 {
+      .n3o-h4 {
         font-size: 14px;
       }
     }
     &__list {
       &.fund {
-        .donationItem {
+        .n3o-donationItem {
           margin-bottom: $space-2xl;
         }
       }
     }
   }
-  .cta {
+  .n3o-cta {
     padding: $space-2xl;
     &__wrapper {
       padding: 10px;
@@ -176,7 +468,7 @@
       &::before {
         height: 22px;
       }
-      .button {
+      .n3o-button {
         padding: 15px;
       }
     }
@@ -191,13 +483,13 @@
         &-inner {
           padding: $space-md;
         }
-        h3 {
+        .n3o-h3 {
           width: 70px;
         }
         hr {
           margin: 0 $space-md;
         }
-        p {
+        .n3o-p {
           font-size: 12px;
           width: calc(100% - 120px);
         }
@@ -207,7 +499,7 @@
           right: $space-lg;
         }
       }
-      & > .large {
+      & > .n3o-large {
         font-size: 16px;
         line-height: 20px;
         bottom: 8px;
@@ -216,11 +508,11 @@
     &Amount {
       &__inner {
         padding: $space-md 24px $space-md $space-md;
-        .subtle {
+        .n3o-subtle {
           display: none;
         }
       }
-      .cta__input {
+      .n3o-cta__input {
         width: 100%;
         border: unset;
         padding: 0;
@@ -239,7 +531,132 @@
       }
     }
   }
+  .n3o-search {
+    &Sec {
+      &__inner {
+        &-gallery {
+          display: none;
+        }
+        &-content {
+          width: 100%;
+          max-width: unset;
+          padding: 35px 0;
+        }
+      }
+      &__input {
+        margin-bottom: 24px;
+        input {
+          font-size: 16px;
+          line-height: 20px;
+          padding-left: 46px;
+        }
+        span {
+          width: 20px;
+          height: 20px;
+        }
+      }
+    }
+  }
+  // mh
+  ._primary-header ._navigation ._cta-column {
+    flex-direction: column;
+  }
+  ._primary-header ._navigation ._cta-column .btn {
+    width: 100% !important;
+    margin-bottom: 15px !important;
+    &:last-child {
+      margin: 0;
+    }
+  }
+  .--mh {
+    &cart {
+      &__wrapper {
+        &::before {
+          display: none;
+        }
+      }
+      &__inner {
+        padding: 20px;
+        &-title {
+          margin-bottom: 24px;
+          padding-bottom: 12px;
+        }
+        &-close {
+          font-size: 0;
+          span {
+            margin: 0;
+            width: 30px;
+            height: 30px;
+          }
+        }
+        &-check {
+          padding: 20px 0;
+        }
+        &-top {
+          margin-bottom: 24px;
+        }
+        &-mid {
+          margin-bottom: 24px;
+        }
+      }
+      &Main {
+        &__list {
+          margin-bottom: 16px;
+          padding-bottom: 20px;
+        }
+      }
+      &Item {
+        flex-direction: column;
+        padding: 10px 20px;
+        &__image {
+          display: none;
+          width: 100%;
+        }
+        &__content {
+          width: 100%;
+          padding: 0;
+          margin-bottom: 10px;
+          a {
+            font-size: 18px;
+          }
+          .n3o-p {
+            font-size: 14px;
+            br {
+              display: none;
+            }
+          }
+        }
+        &__remove {
+          font-size: 10px;
+          justify-content: flex-start;
+        }
+        &__price {
+          width: 100%;
+          align-items: flex-start;
+          text-align: start;
+          .n3o-p {
+            font-size: 26px;
+          }
+        }
+      }
+    }
+    &checkC {
+      padding: 20px;
+      &__box {
+        width: 20px;
+        height: 20px;
+      }
+      .n3o-p {
+        width: calc(100% - 30px);
+        font-size: 14px;
+        line-height: 20px;
+      }
+    }
+  }
+
+  @include hero-xsm-sm;
   @include sign-xsm-sm;
+  @include card-xsm-sm;
 }
 // 440px
 @include xxsm-xsm {
@@ -248,4 +665,5 @@
 // 390px
 @include xxxsm-xxsm {
   @include onboard-xxxsm-xxsm;
+  @include intro-xxxsm-xxsm;
 }

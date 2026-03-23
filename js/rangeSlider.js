@@ -13,8 +13,8 @@ if (range) {
 
     const adminC = document.getElementById("adminC");
     if (adminC) {
-      const adminCText = adminC.querySelector(".adminC__text");
-      const adminCRow = adminC.querySelector(".adminC__row");
+      const adminCText = adminC.querySelector(".n3o-adminC__text");
+      const adminCRow = adminC.querySelector(".n3o-adminC__row");
       if (value > 0) {
         adminCRow.classList.add("active");
         adminCText.classList.remove("active");

@@ -1,4 +1,43 @@
-.onboard {
+.n3o-onboard {
+  font-family: $mainFont;
+  color: $black;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+ 
+  a {
+    text-decoration: none;
+    opacity: 1;
+    color: $white;
+    transition: 0.3s ease;
+    cursor: pointer;
+    &:hover {
+      opacity: 0.88;
+    }
+  }
+  ul {
+    li {
+      list-style: none;
+    }
+  }
+  button {
+    outline: none;
+  }
+  button:focus {
+    outline: none;
+  }
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  input[type="search"]::-webkit-search-cancel-button,
+  input[type="search"]::-webkit-search-decoration,
+  input[type="search"]::-webkit-search-results-button,
+  input[type="search"]::-webkit-search-results-decoration {
+    display: none;
+  }
+
   margin: auto;
   background: $white;
   box-shadow: 0px 5px 64px 10px rgba(0, 0, 0, 0.08),
@@ -19,7 +58,7 @@
     border-radius: $corner-xs;
     background-color: $theme-primary-subtle;
     box-sizing: border-box;
-    h2 {
+    .n3o-h2 {
       margin-bottom: $space-6xl;
     }
   }
@@ -32,10 +71,10 @@
   }
   &__foot {
     text-align: center;
-    p {
+    .n3o-p {
       margin-bottom: $space-lg;
     }
-    .button {
+    .n3o-button {
       width: 100%;
     }
   }
@@ -51,7 +90,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 50%;
+    border-radius: $corner-full;
     overflow: hidden;
     margin-bottom: $space-md;
     img {
@@ -72,13 +111,15 @@
       display: flex;
       justify-content: center;
       align-items: center;
+      background-color: $theme-primary-light;
+      border-radius: $corner-full;
       img {
         width: 60%;
       }
     }
     &__text {
       width: calc(100% - 52px);
-      p {
+      .n3o-p {
         line-height: 175%;
         b {
           font-weight: 700;
@@ -89,7 +130,7 @@
 }
 // 750px
 @mixin onboard-sm-md {
-  .onboard {
+  .n3o-onboard {
     flex-direction: column;
     &__content {
       width: 100%;
@@ -113,7 +154,7 @@
 }
 // 390px
 @mixin onboard-xxxsm-xxsm {
-  .onboard {
+  .n3o-onboard {
     box-shadow: unset;
     border-radius: unset;
     &__wrapper {

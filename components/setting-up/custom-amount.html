@@ -15,26 +15,26 @@
     <title>Custom Amount</title>
   </head>
   <body>
-    <div class="setting__wrapper">
-      <div class="setting">
-        <div class="steps">
-          <div class="steps__button tabBtn active" data-tab="#tab-1">
-            <h4>Step 1</h4>
-            <div class="detail">Set Goal</div>
+    <div class="n3o-setting__wrapper">
+      <div class="n3o-setting">
+        <div class="n3o-steps">
+          <div class="n3o-steps__button tabBtn active" data-tab="#tab-1">
+            <h4 class="n3o-h4">Step 1</h4>
+            <div class="n3o-detail">Set Goal</div>
           </div>
-          <div class="steps__button tabBtn" data-tab="#tab-2">
-            <h4>Step 2</h4>
-            <div class="detail">About your page</div>
+          <div class="n3o-steps__button tabBtn" data-tab="#tab-2">
+            <h4 class="n3o-h4">Step 2</h4>
+            <div class="n3o-detail">About your page</div>
           </div>
         </div>
-        <div class="setting__body tabEvent active" id="tab-1">
-          <h4>Select the project you would like to fundraise for</h4>
-          <div class="select__outer">
-            <div class="select">
-              <div class="select__selected">Climate Action</div>
+        <div class="n3o-setting__body tabEvent active" id="tab-1">
+          <h4 class="n3o-h4">Select the project you would like to fundraise for</h4>
+          <div class="n3o-select__outer">
+            <div class="n3o-select">
+              <div class="n3o-select__selected">Climate Action</div>
               <input type="hidden" />
-              <ul class="select__options">
-                <div class="select__search">
+              <ul class="n3o-select__options">
+                <div class="n3o-select__search">
                   <svg>
                     <use xlink:href="#searchIcon"></use>
                   </svg>
@@ -45,7 +45,7 @@
                     onkeyup="myFunction()"
                   />
                 </div>
-                <div class="select__options-body" id="myMenu">
+                <div class="n3o-select__options-body" id="myMenu">
                   <li data-value="1">Climate Action</li>
                   <li data-value="2">Education</li>
                   <li data-value="3">Food 4 Kids</li>
@@ -59,20 +59,20 @@
                 <use xlink:href="#chevron-bottom"></use>
               </svg>
             </div>
-            <div class="setting__tags">
-              <a href="#" class="setting__tag">
+            <div class="n3o-setting__tags">
+              <a href="#" class="n3o-setting__tag">
                 <svg>
                   <use xlink:href="#megaphone"></use>
                 </svg>
                 <b> Water Project</b>
               </a>
-              <a href="#" class="setting__tag">
+              <a href="#" class="n3o-setting__tag">
                 <svg>
                   <use xlink:href="#location"></use>
                 </svg>
                 <b> Zambia </b>
               </a>
-              <a href="#" class="setting__tag">
+              <a href="#" class="n3o-setting__tag">
                 <svg>
                   <use xlink:href="#coins"></use>
                 </svg>
@@ -80,35 +80,35 @@
               </a>
             </div>
           </div>
-          <h4>I want to raise</h4>
-          <div class="setting__radios">
-            <div class="setting__radio">
+          <h4 class="n3o-h4">I want to raise</h4>
+          <div class="n3o-setting__radios">
+            <div class="n3o-setting__radio">
               <input type="checkbox" />
               <span> £100 </span>
             </div>
-            <div class="setting__radio">
+            <div class="n3o-setting__radio">
               <input type="checkbox" />
               <span> £500 </span>
             </div>
-            <div class="setting__radio">
+            <div class="n3o-setting__radio">
               <input type="checkbox" />
               <span> £750 </span>
             </div>
-            <div class="setting__radio">
+            <div class="n3o-setting__radio">
               <input type="checkbox" />
               <span> £1,000 </span>
             </div>
-            <div class="setting__radio">
+            <div class="n3o-setting__radio">
               <input type="checkbox" />
               <span> £2,000 </span>
             </div>
-            <div class="setting__radio custom">
+            <div class="n3o-setting__radio custom">
               <input type="checkbox" />
               <span>custom </span>
             </div>
           </div>
-          <div class="cta__input">
-            <label class="large" for="openAmount"> £ </label>
+          <div class="n3o-cta__input">
+            <label class="n3o-large" for="openAmount"> £ </label>
             <input
               id="openAmount"
               placeholder="75|"
@@ -117,22 +117,22 @@
               value="1,500"
               data-type="currency"
             />
-            <div class="cta__input-select">
+            <div class="n3o-cta__input-select">
               <select name="currency" id="">
                 <option value="GBP">GBP</option>
                 <option value="USD">USD</option>
               </select>
             </div>
           </div>
-          <div class="setting__date" id="settingDate">
-            <label class="checkD">
-              <div class="checkD__box">
+          <div class="n3o-setting__date" id="settingDate">
+            <label class="n3o-checkD">
+              <div class="n3o-checkD__box">
                 <input type="checkbox" id="checkD" checked />
                 <span></span>
               </div>
-              <p class="sm">Has End Date</p>
+              <p class="n3o-p sm">Has End Date</p>
             </label>
-            <div class="setting__date-input active">
+            <div class="n3o-setting__date-input active">
               <input
                 placeholder="Select Date"
                 type="text"
@@ -144,50 +144,50 @@
               </span>
             </div>
           </div>
-          <button type="submit" disabled class="button primary submit1">
+          <button type="submit" disabled class="n3o-button primary submit1">
             Continue
           </button>
         </div>
-        <div class="setting__body tabEvent" id="tab-2">
-          <label class="input__outer">
-            <h4>Page Title</h4>
-            <div class="input big">
+        <div class="n3o-setting__body tabEvent" id="tab-2">
+          <label class="n3o-input__outer">
+            <h4 class="n3o-h4">Page Title</h4>
+            <div class="n3o-input big">
               <input
                 type="text"
                 id="pageTitle"
                 placeholder="E.g. Building a school"
               />
             </div>
-            <p class="subtle">Write campaign name up to 60 characters.</p>
+            <p class="n3o-subtle">Write campaign name up to 60 characters.</p>
           </label>
-          <label class="input__outer">
-            <h4>Your Name (Appears on page)</h4>
-            <div class="input big">
+          <label class="n3o-input__outer">
+            <h4 class="n3o-h4">Your Name (Appears on page)</h4>
+            <div class="n3o-input big">
               <input type="text" id="pageName" />
             </div>
           </label>
-          <label class="input__outer">
-            <div class="small">Short Description (Optional)</div>
-            <div class="input big">
+          <label class="n3o-input__outer">
+            <div class="n3o-small">Short Description (Optional)</div>
+            <div class="n3o-input big">
               <textarea
                 rows="3"
                 placeholder="Type your message here"
               ></textarea>
             </div>
-            <p class="subtle">
+            <p class="n3o-subtle">
               Slightly longer text that will appear after the campaign name. You
               can write up to 160 characters.
             </p>
           </label>
-          <div class="checkout__message" id="errorMessage2">
+          <div class="n3o-checkout__message" id="errorMessage2">
             <svg>
               <use xlink:href="#alertIcon"></use>
             </svg>
-            <p class="detail">
+            <p class="n3o-detail">
               Please complete the form before proceed to payment.
             </p>
           </div>
-          <button type="submit" class="button primary submit2">Continue</button>
+          <button type="submit" class="n3o-button primary submit2">Continue</button>
         </div>
       </div>
     </div>

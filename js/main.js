@@ -17,7 +17,7 @@ if (header) {
 // scroll end
 // sliders
 $(function () {
-  $(".campaignSlider").slick({
+  $(".n3o-campaignSlider").slick({
     infinite: true,
     slidesToShow: 1,
     slidesToScroll: 1,
@@ -29,11 +29,11 @@ $(function () {
 });
 
 const selectFunc = () => {
-  const selects = document.querySelectorAll(".select");
+  const selects = document.querySelectorAll(".n3o-select");
 
   selects.forEach((select) => {
-    const selected = select.querySelector(".select__selected");
-    const selectOptions = select.querySelector(".select__options");
+    const selected = select.querySelector(".n3o-select__selected");
+    const selectOptions = select.querySelector(".n3o-select__options");
     const listItems = selectOptions.querySelectorAll("li");
     const input = select.querySelector("input[type='hidden']");
     selected.onclick = () => {
@@ -58,6 +58,37 @@ const selectFunc = () => {
   });
 };
 selectFunc();
+
+const sortFunc = () => {
+  const sorts = document.querySelectorAll(".n3o-sort");
+  sorts.forEach((sort) => {
+    const selected = sort.querySelector(".n3o-sort__selected");
+    const selectedText = selected.querySelector("b");
+    const sortOptions = sort.querySelector(".n3o-sort__options");
+    const listItems = sortOptions.querySelectorAll("li");
+    const input = sort.querySelector("input[type='hidden']");
+    selected.onclick = () => {
+      sort.classList.toggle("active");
+      eventHandler();
+    };
+    listItems.forEach((listItem) => {
+      listItem.onclick = () => {
+        selectedText.innerHTML = listItem.innerHTML;
+        sort.classList.remove("active");
+        input.value = listItem.getAttribute("data-value");
+        eventHandler();
+      };
+    });
+    const eventHandler = () => {
+      window.addEventListener("click", (e) => {
+        if (!sort.contains(e.target)) {
+          sort.classList.remove("active");
+        }
+      });
+    };
+  });
+};
+sortFunc();
 
 const checkoutForm = document.getElementById("checkoutForm");
 if (checkoutForm) {
@@ -159,7 +190,7 @@ if (copyButton) {
   const textElement = document.getElementById("myUrl");
 
   const copyText = (e) => {
-    window.getSelection().selectAllChildren(textElement);
+    window.getSelection().n3o-selectAllChildren(textElement);
     document.execCommand("copy");
   };
   copyButton.addEventListener("click", (e) => copyText(e));
@@ -198,13 +229,13 @@ $(document).ready(function () {
 // adminC contribution start
 const adminC = document.getElementById("adminC");
 if (adminC) {
-  const adminCText = adminC.querySelector(".adminC__text");
-  const adminCRow = adminC.querySelector(".adminC__row");
-  const adminCRowCustom = adminC.querySelector(".adminC__foot");
+  const adminCText = adminC.querySelector(".n3o-adminC__text");
+  const adminCRow = adminC.querySelector(".n3o-adminC__row");
+  const adminCRowCustom = adminC.querySelector(".n3o-adminC__foot");
   const customFeeBtns = adminC.querySelectorAll(".customBtn");
   const customBack = adminC.querySelector(".customBack");
-  const customInput = adminC.querySelector(".cta__input");
-  const adminCSlider = adminC.querySelector(".adminC__slider");
+  const customInput = adminC.querySelector(".n3o-cta__input");
+  const adminCSlider = adminC.querySelector(".n3o-adminC__slider");
   customFeeBtns.forEach((customFeeBtn) => {
     customFeeBtn.onclick = () => {
       customInput.classList.add("active");
@@ -224,7 +255,7 @@ if (adminC) {
 }
 // adminC contribution end
 
-const cta_amounts = document.querySelectorAll(".ctaAmount");
+const cta_amounts = document.querySelectorAll(".n3o-ctaAmount");
 cta_amounts.forEach((cta_amount) => {
   const cta_select = cta_amount.querySelector("select");
   const cta_label = cta_amount.querySelector("label");

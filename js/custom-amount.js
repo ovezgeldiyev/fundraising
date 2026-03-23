@@ -1,13 +1,13 @@
-const radios = document.querySelectorAll(".setting__radio");
-const setting = document.querySelector(".setting");
-const cta_input = setting.querySelector(".cta__input");
+const radios = document.querySelectorAll(".n3o-setting__radio");
+const setting = document.querySelector(".n3o-setting");
+const cta_input = setting.querySelector(".n3o-cta__input");
 const submitBtn = setting.querySelector(".submit1");
-const select = document.querySelector(".select");
+const select = document.querySelector(".n3o-select");
 const settingDate = document.getElementById("settingDate");
 const checkD = document.getElementById("checkD");
 let settingInput;
 if (settingDate) {
-  settingInput = settingDate.querySelector(".setting__date-input");
+  settingInput = settingDate.querySelector(".n3o-setting__date-input");
 }
 
 if (cta_input) {
@@ -15,7 +15,7 @@ if (cta_input) {
     if (
       e.target.value !== "" &&
       select.querySelector("input[type='hidden']").value !== "" &&
-      setting.querySelector(".setting__radio.active") &&
+      setting.querySelector(".n3o-setting__radio.active") &&
       ((checkD.checked && settingInput.querySelector("input").value !== "") ||
         !checkD.checked)
     ) {
@@ -26,8 +26,8 @@ if (cta_input) {
   };
 }
 const selectFunc = () => {
-  const selected = select.querySelector(".select__selected");
-  const selectOptions = select.querySelector(".select__options");
+  const selected = select.querySelector(".n3o-select__selected");
+  const selectOptions = select.querySelector(".n3o-select__options");
   const listItems = selectOptions.querySelectorAll("li");
   const input = select.querySelector("input[type='hidden']");
 
@@ -47,7 +47,7 @@ const selectFunc = () => {
       if (
         cta_input.querySelector("input").value !== "" &&
         select.querySelector("input[type='hidden']").value !== "" &&
-        setting.querySelector(".setting__radio.active") &&
+        setting.querySelector(".n3o-setting__radio.active") &&
         ((checkD.checked && settingInput.querySelector("input").value !== "") ||
           !checkD.checked)
       ) {
@@ -77,7 +77,7 @@ radios.forEach((radio) => {
         if (
           cta_input.querySelector("input").value !== "" &&
           select.querySelector("input[type='hidden']").value !== "" &&
-          setting.querySelector(".setting__radio.active") &&
+          setting.querySelector(".n3o-setting__radio.active") &&
           ((checkD.checked &&
             settingInput.querySelector("input").value !== "") ||
             !checkD.checked)
@@ -90,7 +90,7 @@ radios.forEach((radio) => {
         if (
           cta_input.querySelector("input").value !== "" &&
           select.querySelector("input[type='hidden']").value !== "" &&
-          setting.querySelector(".setting__radio.active") &&
+          setting.querySelector(".n3o-setting__radio.active") &&
           ((checkD.checked &&
             settingInput.querySelector("input").value !== "") ||
             !checkD.checked)
@@ -119,7 +119,7 @@ radios.forEach((radio) => {
       if (
         cta_input.querySelector("input").value !== "" &&
         select.querySelector("input[type='hidden']").value !== "" &&
-        setting.querySelector(".setting__radio.active") &&
+        setting.querySelector(".n3o-setting__radio.active") &&
         ((checkD.checked && settingInput.querySelector("input").value !== "") ||
           !checkD.checked)
       ) {
@@ -139,7 +139,7 @@ if (settingDate) {
       if (
         cta_input.querySelector("input").value !== "" &&
         select.querySelector("input[type='hidden']").value !== "" &&
-        setting.querySelector(".setting__radio.active") &&
+        setting.querySelector(".n3o-setting__radio.active") &&
         ((checkD.checked && settingInput.querySelector("input").value !== "") ||
           !checkD.checked)
       ) {
@@ -152,7 +152,7 @@ if (settingDate) {
       if (
         cta_input.querySelector("input").value !== "" &&
         select.querySelector("input[type='hidden']").value !== "" &&
-        setting.querySelector(".setting__radio.active") &&
+        setting.querySelector(".n3o-setting__radio.active") &&
         ((checkD.checked && settingInput.querySelector("input").value !== "") ||
           !checkD.checked)
       ) {
@@ -168,7 +168,7 @@ if (settingInput) {
     if (
       cta_input.querySelector("input").value !== "" &&
       select.querySelector("input[type='hidden']").value !== "" &&
-      setting.querySelector(".setting__radio.active") &&
+      setting.querySelector(".n3o-setting__radio.active") &&
       ((checkD.checked && settingInput.querySelector("input").value !== "") ||
         !checkD.checked)
     ) {
